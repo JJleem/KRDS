@@ -1,0 +1,119 @@
+/* 
+ * name : Checkbox Css
+ * date : 2024-01-03
+ */
+
+
+ /* **** checkbox : switch type **** */
+.form-switch {
+	$size: lg;
+	display: inline-flex;
+	position: relative;
+	label {
+		display: inline-flex;
+		font-size: var(--#{$prefix}switch-fz-#{$size});
+	}
+	[type="checkbox"] {
+		~ i {			
+			display: inline-flex;
+			align-items: center;
+			&::before,
+			&::after {
+				display: inline-flex;
+				content: '';
+			}
+			&::before {
+				@include position($l: var(--#{$prefix}switch-br-#{$size}));
+				width: var(--#{$prefix}switch-b-#{$size});
+				height: var(--#{$prefix}switch-b-#{$size});
+				border-radius: var(--#{$prefix}switch-rd-#{$size});
+				background-color: var(--#{$prefix}white);
+				transition: all 0.3s;
+
+			}
+			&::after {
+				width: var(--#{$prefix}switch-w-#{$size});
+				height: var(--#{$prefix}switch-h-#{$size});
+				border-radius: var(--#{$prefix}switch-rd-#{$size});
+				background-color: var(--#{$prefix}secondary-20);
+			}
+		}
+		~ label {
+			z-index: 1;
+			$labelValue : var(--#{$prefix}switch-w-#{$size});
+			$pdValue : var(--#{$prefix}switch-pd-#{$size});
+			padding-left: calc($labelValue + $pdValue);
+			margin-left: calc($labelValue * -1);
+			font-size: var(--#{$prefix}switch-fz-#{$size});
+		}
+		&:checked {
+			~ i {
+				&::before {
+					$posL : calc(var(--#{$prefix}switch-w-#{$size}) - var(--#{$prefix}switch-b-#{$size}) - var(--#{$prefix}switch-br-#{$size}));
+					@include position($l: $posL);
+				}
+				&::after {
+					background-color: var(--#{$prefix}primary);
+				}
+			}
+		}
+		&:disabled {
+			~ i {
+				&::before {
+					border-color: var(--#{$prefix}gray-20);
+					background-color:var(--#{$prefix}gray-40);
+				}
+				&::after {
+					background-color: var(--#{$prefix}gray-20);
+				}
+			}
+			~ label {
+				color: var(--#{$prefix}gray-50);
+				cursor: inherit;
+			}
+		}
+		&:focus {
+			~ label {
+				@include focus($offset: .4rem, $color: $primary);
+			}
+		}
+	}
+}
+
+/* **** checkbox : chip type **** */
+.form-chip {
+	.checkbox {
+		~ .form-chip-outline {
+			&::before {
+				display: inline-flex;
+				content: '';
+			}
+
+		}
+		&:focus {
+			~ .form-chip-outline {
+				@include focus(-.4rem);
+				border-radius: var(--#{$prefix}chkChipOutline-rd-lg);
+			}
+		}
+	}
+	&.md {
+		.checkbox {
+			&:focus {
+				~ .form-chip-outline {
+					border-radius: var(--#{$prefix}chkChipOutline-rd-md);
+				}
+			}
+		}
+	}
+	&.sm {
+		.checkbox {
+			&:focus {
+				~ .form-chip-outline {
+					border-radius: var(--#{$prefix}chkChipOutline-rd-sm);
+				}
+			}
+		}
+	}
+}
+

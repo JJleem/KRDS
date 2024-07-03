@@ -1,0 +1,9 @@
+//@use 'sass:map';
+//scss 공통영역 및 mixin 선언파일 모음
+/* 공통 */
+// Configuration
+@import 'variables';
+@import 'functions';
+
+//mixin
+@import 'group_mixins';

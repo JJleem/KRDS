@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+
+// ui/ux css
+@import "./component/c_kds";
+@import "./component/c_initialize";
+@import "./component/c_components";
+@import "./component/c_forms";
+
+// sample css
+@import "./pattern/p_layout";
+@import "./pattern/p_common";
+@import "./pattern/p_content";
+
+// guide css
+@import "./guide/g_guide";

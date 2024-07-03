@@ -1,0 +1,379 @@
+.btn {
+  //default : primary color height lg
+  $size: lg;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  width: auto;
+  height: var(--#{$prefix}btn-h-#{$size});
+  padding: 0 var(--#{$prefix}btn-px-#{$size});
+  background-color: var(--#{$prefix}primary);
+  border: 1px solid var(--#{$prefix}primary);
+  border-radius: var(--#{$prefix}btn-rd-#{$size});
+  font-size: var(--#{$prefix}fz-body-#{$size});
+  color: var(--#{$prefix}white);
+  font-weight: map-get($fws, normal);
+  line-height: 1;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: $transition-base;
+  &:hover {
+    background-color: var(--#{$prefix}primary-60);
+    border-color: var(--#{$prefix}primary-60);
+  }
+  &:active {
+    background-color: var(--#{$prefix}primary-70);
+    border-color: var(--#{$prefix}primary-70);
+  }
+  &:focus {
+    @include focus($color: $white, $alpha: 0.9);
+    transition: none;
+  }
+  &[disabled] {
+    background-color: var(--#{$prefix}gray-30);
+    border-color: var(--#{$prefix}gray-30);
+    color: var(--#{$prefix}gray-60);
+    cursor: default;
+  }
+
+  //color
+  &.primary {
+    background-color: var(--#{$prefix}primary);
+    border: 1px solid var(--#{$prefix}primary);
+    color: var(--#{$prefix}white);
+    &:hover {
+      background-color: var(--#{$prefix}primary-60);
+      border-color: var(--#{$prefix}primary-60);
+    }
+    &:active {
+      background-color: var(--#{$prefix}primary-70);
+      border-color: var(--#{$prefix}primary-70);
+    }
+    &[disabled] {
+      background-color: var(--#{$prefix}gray-30);
+      border-color: var(--#{$prefix}gray-30);
+      color: var(--#{$prefix}gray-60);
+    }
+  }
+  &.secondary {
+    background-color: var(--#{$prefix}white);
+    border: 1px solid var(--#{$prefix}primary);
+    color: $primary-60;
+    &:hover {
+      background-color: var(--#{$prefix}primary-5);
+    }
+    &:active {
+      background-color: var(--#{$prefix}primary-10);
+    }
+    &:focus {
+      @include focus($color: $primary);
+    }
+    &[disabled] {
+      background-color: var(--#{$prefix}gray-30);
+      border-color: var(--#{$prefix}gray-40);
+      color: var(--#{$prefix}gray-60);
+    }
+    &.ico-arr-down {
+      &::after {
+        background-size: contain;
+        background-position: center;
+      }
+    }
+    &.active {
+      &.ico-arr-down {
+        &::after {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  &.tertiary {
+    background-color: var(--#{$prefix}white);
+    border: 1px solid var(--#{$prefix}gray-90);
+    color: var(--#{$prefix}secondary-90);
+    &:hover {
+      background-color: var(--#{$prefix}gray-5);
+    }
+    &:active {
+      background-color: var(--#{$prefix}gray-10);
+    }
+    &:focus {
+      @include focus($color: $primary);
+    }
+    &[disabled] {
+      background-color: var(--#{$prefix}gray-30);
+      border-color: var(--#{$prefix}gray-40);
+      color: var(--#{$prefix}gray-60);
+    }
+  }
+
+  //txt + ico
+  &[class*="ico-"] {
+    &::after {
+      display: inline-flex;
+      content: "";
+      width: 2.4rem;
+      height: 2.4rem;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &.ico-before {
+      &::before {
+        display: inline-flex;
+        content: "";
+        width: 2.4rem;
+        height: 2.4rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &.xsm {
+    &[class*="ico-"] {
+      &::after {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+  }
+  &.sm &[class*="ico-"] {
+    &::after {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+/* **** button : only icon **** */
+.btn-ico {
+  @include btn-reset;
+  padding: 0 !important;
+  &:focus {
+    @include focus($offset: 0.4rem);
+  }
+  &[class*="ico-"] {
+    width: 4rem;
+    height: 4rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    &::after {
+      display: none;
+    }
+    &.md {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+    &.sm {
+      width: 2rem;
+      height: 2rem;
+    }
+    &.sm-m {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+    &.sm-l {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+    &.xsm {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
+
+  &.ico-info {
+    &.sm {
+      background-position: center;
+      background-size: 1.6rem;
+    }
+  }
+  &.ico-refresh {
+    border-radius: 10rem;
+    border: 0.1rem solid var(--#{$prefix}gray-40);
+    background-color: var(--#{$prefix}white);
+
+    background-size: 1.6rem;
+  }
+  &.ico-toggle-r {
+    border-radius: 10rem;
+    border: 0.1rem solid var(--#{$prefix}gray-40);
+    background-color: var(--#{$prefix}white);
+
+    background-size: 1.6rem;
+  }
+
+  &.ico-page-prev {
+    border-radius: 10rem;
+    border: 0.1rem solid var(--#{$prefix}gray-40);
+    background-color: var(--#{$prefix}white);
+
+    background-size: 2.4rem;
+    &.disabled {
+      background-color: var(--#{$prefix}secondary-5);
+    }
+  }
+  &.ico-page-next {
+    border-radius: 10rem;
+    border: 0.1rem solid var(--#{$prefix}gray-40);
+    background-color: var(--#{$prefix}white);
+
+    background-size: 2.4rem;
+    &.disabled {
+      background-color: var(--#{$prefix}secondary-5);
+    }
+  }
+}
+
+/* **** button : text button **** */
+.btn-txt {
+  @include btn-reset;
+  padding: 0 var(--#{$prefix}spacer-default2) !important;
+  &:hover {
+    background-color: var(--#{$prefix}secondary-5);
+  }
+  &:active {
+    background-color: var(--#{$prefix}secondary-10);
+  }
+  &:focus {
+    @include focus($offset: 0.4rem);
+  }
+  &[disabled] {
+    color: var(--#{$prefix}gray-50);
+  }
+  &[class*="ico-"] {
+    &::after {
+      background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_go_20.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+    &.ico-before {
+      &::before {
+        display: inline-flex;
+        content: "";
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &.underline {
+    text-decoration: underline;
+  }
+  &.link {
+    //링크이면서 텍스트사이에 있는경우 높이값 초기화
+    height: auto;
+    text-decoration: underline !important;
+  }
+
+  &.ico-filter {
+    position: relative;
+    &::before,
+    .num {
+      display: inline-flex;
+      position: absolute;
+      right: 0.1rem;
+      z-index: 1;
+      height: 2rem;
+      font-size: var(--#{$prefix}fz-label-sm);
+      color: var(--#{$prefix}white);
+      padding: 0 var(--#{$prefix}spacer-2);
+      margin-top: -3rem;
+      border-radius: 2rem;
+      background-color: var(--#{$prefix}primary);
+    }
+  }
+
+  &.sm {
+    &[class*="ico-"] {
+      &::before,
+      &::after {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+  &.xsm {
+    &[class*="ico-"] {
+      gap: var(--#{$prefix}spacer-default2);
+      &::before,
+      &::after {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+  }
+  &.h-auto {
+    height: auto;
+    padding: var(--#{$prefix}spacer-default2) !important;
+  }
+}
+//텍스트 사이에 링크만 삽입되는 경우
+.link-txt {
+  text-decoration: underline;
+}
+
+/* **** button : chips **** */
+// 배경색이 있는 타입
+.btn-chip-fill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--#{$prefix}gray-10);
+  &:hover {
+    background-color: var(--#{$prefix}secondary-5);
+  }
+  &:active {
+    background-color: var(--#{$prefix}secondary-10);
+  }
+  &[disabled],
+  &.disabled {
+    background-color: var(--#{$prefix}gray-30);
+  }
+}
+
+//외곽 라인이 있는 타입
+.btn-chip-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 0.2rem;
+  background-color: var(--#{$prefix}white);
+  border: 0.1rem solid var(--#{$prefix}gray-40);
+  &:hover {
+    background-color: var(--#{$prefix}secondary-5);
+  }
+  &:active {
+    background-color: var(--#{$prefix}secondary-10);
+  }
+  &:disabled,
+  &.disabled {
+    background-color: var(--#{$prefix}gray-30);
+  }
+}
+
+/* **** button area **** */
+.btn-wrap {
+  width: 100%;
+}
+
+//responsive mobile
+@include mobile {
+  .btn-ico {
+    &[class*="ico-"] {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+}
