@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const HeaderTop = () => {
   const [isClicked, setIsClicked] = useState(false);
@@ -43,9 +44,9 @@ const HeaderTop = () => {
                 URL에서 도메인 주소를 확인해 보세요
               </dd>
               <dd>
-                <a href="/" className="btn btn-txt ico-go xsm" target="_blank">
+                <Link to="/" className="btn btn-txt ico-go xsm" target="_blank">
                   운영중인 공식 누리집보기
-                </a>
+                </Link>
               </dd>
             </dl>
           </div>

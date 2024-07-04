@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const VisualArea = () => {
   return (
     <div className="main-area visual-area">
@@ -15,12 +15,12 @@ const VisualArea = () => {
           사용자 중심의 공공 웹·앱을 구축, 운영 및 관리 하도록 지원합니다
         </p>
         <div className="btn-wrap">
-          <a href="/guideline" className="btn tertiary xlg">
+          <Link to="/guideline" className="btn tertiary xlg">
             시작하기
-          </a>
-          <a href="/styleguide" className="btn tertiary xlg">
+          </Link>
+          <Link to="/styleguide" className="btn tertiary xlg">
             스타일 가이드
-          </a>
+          </Link>
         </div>
       </div>
     </div>

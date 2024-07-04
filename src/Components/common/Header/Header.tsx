@@ -1,31 +1,32 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div id="g-header" className="includeJsGuide">
       <div className="inner">
         <h1 className="logo">
-          <a href="/">KRDS</a>
+          <Link to="/">KRDS</Link>
         </h1>
         <nav className="gnb">
           <ul>
             <li>
-              <a href="/">소개</a>
+              <Link to="/">소개</Link>
             </li>
             <li>
-              <a href="/">디자인 원칙</a>
+              <Link to="/">디자인 원칙</Link>
             </li>
             <li>
-              <a href="/">스타일 가이드</a>
+              <Link to="/">스타일 가이드</Link>
             </li>
             <li>
-              <a href="/">컴포넌트</a>
+              <Link to="/">컴포넌트</Link>
             </li>
             <li>
-              <a href="/">기본 패턴</a>
+              <Link to="/">기본 패턴</Link>
             </li>
             <li>
-              <a href="/">서비스 패턴</a>
+              <Link to="/">서비스 패턴</Link>
             </li>
           </ul>
         </nav>

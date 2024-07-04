@@ -2228,6 +2228,9 @@ caption {
   outline-offset: 0.4rem;
   outline: 2px solid rgba(36, 107, 235, 0.8);
 }
+.btn-ico.ico-sch {
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_sch_40.svg");
+}
 .btn-ico[class*=ico-] {
   width: 4rem;
   height: 4rem;
@@ -2319,6 +2322,9 @@ caption {
 .btn-txt.iico-more::after {
   background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_arr1_20_right.svg") !important;
 }
+.btn-txt.dico-down::after {
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_file_20.svg") !important;
+}
 .btn-txt[class*=ico-]::after {
   background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_go_20.svg");
   background-repeat: no-repeat;
@@ -2349,6 +2355,22 @@ caption {
   background-position: center;
 }
 .btn-txt[class*=iico-].ico-before::after {
+  display: none;
+}
+.btn-txt[class*=dico-]::after {
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_file_20.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.btn-txt[class*=dico-].ico-before::before {
+  display: inline-flex;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.btn-txt[class*=dico-].ico-before::after {
   display: none;
 }
 .btn-txt.underline {
@@ -7264,6 +7286,7 @@ input[type=checkbox] {
   padding: 0 var(--krds-spacer-2);
   border-radius: 0.4rem;
   background-color: var(--krds-primary-5);
+  margin-right: 5px;
 }
 .krds-badge.bg1 {
   color: var(--krds-white);
@@ -7720,7 +7743,7 @@ input[type=checkbox] {
 /* ***** MAIN ***** */
 /* ** 긴급공지 **/
 .main-urgent-wrap {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 .main-urgent-wrap .urgent-ban-list {
   display: flex;
@@ -7788,7 +7811,7 @@ input[type=checkbox] {
 
 /* ** 비주얼  영역 ** */
 .main-vban-wrap.bg {
-  background-color: #D8E4F2;
+  background-color: #d8e4f2;
 }
 .main-vban-wrap:not(.bg) {
   margin-top: var(--krds-spacer-12);
@@ -8078,7 +8101,7 @@ input[type=checkbox] {
   flex-shrink: 0;
   width: 24rem;
   border-radius: var(--krds-rd-12);
-  background-color: #DFE7EF;
+  background-color: #dfe7ef;
 }
 .main-vban-wrap #main-vb-basic .d-auto #main-vb-btm .im img {
   max-width: 100%;
@@ -8231,7 +8254,7 @@ input[type=checkbox] {
   background-color: var(--krds-secondary-5);
 }
 .main-sect.bg .contents-wrap .contents-text {
-  background-color: #DFE7EF;
+  background-color: #dfe7ef;
 }
 .main-sect:last-child:not(.bg) {
   padding-bottom: var(--krds-spacer-20);
@@ -8434,7 +8457,7 @@ input[type=checkbox] {
 .main-sect .policy-list .d-card .im {
   flex-shrink: 0;
   height: 19.6rem;
-  background-color: #DFE8F4;
+  background-color: #dfe8f4;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -8771,7 +8794,7 @@ input[type=checkbox] {
   background-color: var(--krds-white);
 }
 .main-d-ban-swiper .text {
-  color: #4D5B63;
+  color: #4d5b63;
 }
 .main-d-ban-swiper .text .cate {
   font-size: var(--krds-fz-body-sm);
@@ -8785,10 +8808,10 @@ input[type=checkbox] {
   text-align: right;
 }
 .main-d-ban-swiper.bg {
-  background-color: #EBF2FA;
+  background-color: #ebf2fa;
 }
 .main-d-ban-swiper.bg .text {
-  color: #485B6B;
+  color: #485b6b;
 }
 
 /* ***** CONTENT ***** */
@@ -9621,6 +9644,16 @@ input[type=checkbox] {
 }
 
 /* 신청하기 : 검색 결과 리스트 */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .search-list {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+@media (max-width: 599px) {
+  .search-list {
+    grid-template-columns: 1fr !important;
+  }
+}
 .search-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -10511,7 +10544,7 @@ input[type=checkbox] {
   gap: var(--krds-spacer-6);
   padding-bottom: var(--krds-spacer-6);
   margin-bottom: var(--krds-spacer-6);
-  border-bottom: 0.1rem solid #D9D9D9;
+  border-bottom: 0.1rem solid #d9d9d9;
 }
 .comp-link-box dt .tit {
   font-size: var(--krds-fz-title-md);
@@ -10622,12 +10655,12 @@ input[type=checkbox] {
   padding: var(--krds-spacer-4);
   margin-top: var(--krds-spacer-20);
   border-radius: var(--krds-rd-6);
-  border: 0.1rem solid #CEE9D4;
-  background-color: #EEF7F0;
+  border: 0.1rem solid #cee9d4;
+  background-color: #eef7f0;
 }
 .assess-question-wrap .assess-end-message .tit {
   font-size: var(--krds-fz-body-lg);
-  color: #006E18;
+  color: #006e18;
   font-weight: 700;
 }
 .assess-question-wrap .assess-end-message .tit::before {
@@ -10812,7 +10845,7 @@ input[type=checkbox] {
   top: 0;
   padding-bottom: var(--krds-spacer-10);
   border-bottom: 0.1rem solid var(--krds-gray-40);
-  background-color: #DEE2E8;
+  background-color: #dee2e8;
 }
 .assess-question-wrap .pop-total-serch-wrap .search-text {
   padding-top: var(--krds-spacer-10);
@@ -11028,7 +11061,7 @@ input[type=checkbox] {
   right: 0;
   z-index: 2;
   padding: var(--krds-spacer-6) var(--krds-spacer-4) var(--krds-spacer-6) var(--krds-spacer-8);
-  background: linear-gradient(90deg, rgba(237, 241, 245, 0.3) 3.12%, #EDF1F5 46.25%);
+  background: linear-gradient(90deg, rgba(237, 241, 245, 0.3) 3.12%, #edf1f5 46.25%);
 }
 .assess-question-wrap .pop-filter-top .filter-tag-wrap .btn-ico.active {
   transform: rotate(-180deg);
@@ -11546,7 +11579,7 @@ input[type=checkbox] {
     /* 통합검색 */
   }
   .assess-question-wrap .main-urgent-wrap {
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
   }
   .assess-question-wrap .main-urgent-wrap .urgent-ban-list {
     gap: var(--krds-spacer-2);
@@ -12608,6 +12641,7 @@ body {
   content: "";
   width: 2rem;
   height: 2rem;
+  background: url("https://uiux.egovframe.go.kr/resources/img/guide/common/arr_lnb.svg") no-repeat;
   background-size: contain;
   transform: translateX(-50%) rotate(180deg);
 }
@@ -13346,6 +13380,7 @@ body {
   content: "";
   width: 12rem;
   height: 100%;
+  background: url("https://uiux.egovframe.go.kr/resources/img/guide/contents/main/ico_figma.svg") no-repeat center;
   background-size: 5.6rem;
 }
 

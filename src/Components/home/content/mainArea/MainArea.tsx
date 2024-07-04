@@ -1,5 +1,6 @@
 import React from "react";
 import db from "../../../../data/db.json";
+import { Link } from "react-router-dom";
 
 const MainArea = () => {
   return (
@@ -9,7 +10,7 @@ const MainArea = () => {
         <ul className="search-list">
           {db.main.map((db) => (
             <li className="li" key={db.id}>
-              <a href="/">
+              <Link to="/">
                 <div
                   className={`img-wrap main_${db.id}`}
                   style={{ backgroundImage: `url("${db.img}")` }}
@@ -21,7 +22,7 @@ const MainArea = () => {
                     <span className="btn sm btn-txt iico-more">바로가기</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

@@ -157,6 +157,9 @@
   &:focus {
     @include focus($offset: 0.4rem);
   }
+  &.ico-sch {
+    background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_sch_40.svg");
+  }
   &[class*="ico-"] {
     width: 4rem;
     height: 4rem;
@@ -252,6 +255,11 @@
       background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_arr1_20_right.svg") !important;
     }
   }
+  &.dico-down {
+    &::after {
+      background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_file_20.svg") !important;
+    }
+  }
   &[class*="ico-"] {
     &::after {
       background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_go_20.svg");
@@ -275,6 +283,26 @@
   &[class*="iico-"] {
     &::after {
       background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_arr1_20_right.svg") !important;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+    &.ico-before {
+      &::before {
+        display: inline-flex;
+        content: "";
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &[class*="dico-"] {
+    &::after {
+      background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_file_20.svg");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;

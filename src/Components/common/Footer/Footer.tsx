@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,14 +11,14 @@ const Footer = () => {
             <li>
               <strong className="strong">행정안전부</strong>
               <span>
-                <a href="tel:044-205-2728">044-205-2728</a>,
-                <a href="tel:044-205-2729">2729</a>
+                <Link to="tel:044-205-2728">044-205-2728</Link>,
+                <Link to="tel:044-205-2729">2729</Link>
               </span>
             </li>
             <li>
               <strong className="strong">한국지능정보사회진흥원</strong>
-              <a href="tel:053-230-1923">053-230-1923</a> |
-              <a href="mailto:uiux@nia.or.kr">uiux@nia.or.kr</a>
+              <Link to="tel:053-230-1923">053-230-1923</Link> |
+              <Link to="mailto:uiux@nia.or.kr">uiux@nia.or.kr</Link>
             </li>
           </ul>
           <span className="copyright">©KRDS. ALL RIGHTS RESERVED.</span>

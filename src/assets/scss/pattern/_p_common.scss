@@ -540,6 +540,8 @@
   padding: 0 var(--#{$prefix}spacer-2);
   border-radius: 0.4rem;
   background-color: var(--krds-primary-5);
+  margin-right: 5px;
+
   &.bg1 {
     color: var(--krds-white);
     background-color: var(--krds-primary);
