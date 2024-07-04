@@ -5,7 +5,7 @@ import HeaderTop from "./Components/common/Header-top/HeaderTop";
 import Footer from "./Components/common/Footer/Footer";
 function App() {
   return (
-    <div id="g-wrap">
+    <div id="g-wrap" className="main">
       <HeaderTop />
       <Header />
       <Home />

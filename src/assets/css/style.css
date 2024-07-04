@@ -2316,6 +2316,9 @@ caption {
 .btn-txt[disabled] {
   color: var(--krds-gray-50);
 }
+.btn-txt.iico-more::after {
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_arr1_20_right.svg") !important;
+}
 .btn-txt[class*=ico-]::after {
   background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_go_20.svg");
   background-repeat: no-repeat;
@@ -2330,6 +2333,22 @@ caption {
   background-position: center;
 }
 .btn-txt[class*=ico-].ico-before::after {
+  display: none;
+}
+.btn-txt[class*=iico-]::after {
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_arr1_20_right.svg") !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.btn-txt[class*=iico-].ico-before::before {
+  display: inline-flex;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.btn-txt[class*=iico-].ico-before::after {
   display: none;
 }
 .btn-txt.underline {
@@ -13213,6 +13232,7 @@ body {
   content: "";
   width: 100%;
   height: 100%;
+  background: url("https://uiux.egovframe.go.kr/resources/img/guide/contents/main/img_visual.png") no-repeat 100% 100%;
   background-size: contain;
 }
 .main .visual-area .tit,

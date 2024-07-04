@@ -247,9 +247,34 @@
   &[disabled] {
     color: var(--#{$prefix}gray-50);
   }
+  &.iico-more {
+    &::after {
+      background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_arr1_20_right.svg") !important;
+    }
+  }
   &[class*="ico-"] {
     &::after {
       background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_go_20.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+    &.ico-before {
+      &::before {
+        display: inline-flex;
+        content: "";
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &[class*="iico-"] {
+    &::after {
+      background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_arr1_20_right.svg") !important;
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
