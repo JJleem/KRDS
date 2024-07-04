@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import { useRecoilState } from "recoil";
+import { toggleState, pathState } from "../../../atom/Atom";
+import { useLocation } from "react-router-dom";
 const Header = () => {
+  const location = useLocation();
+
+  const [clickedToggle, setClickedToggle] = useRecoilState(toggleState);
+
+  const handleClick = () => {
+    setClickedToggle(!clickedToggle);
+  };
+
   return (
     <div id="g-header" className="includeJsGuide">
       <div className="inner">
@@ -10,14 +20,22 @@ const Header = () => {
         </h1>
         <nav className="gnb">
           <ul>
-            <li>
-              <Link to="/">소개</Link>
+            <li
+              className={
+                location.pathname === "/guideline" ? "active" : undefined
+              }
+            >
+              <Link to="/guideline">소개</Link>
             </li>
             <li>
               <Link to="/">디자인 원칙</Link>
             </li>
-            <li>
-              <Link to="/">스타일 가이드</Link>
+            <li
+              className={
+                location.pathname === "/styleguide" ? "active" : undefined
+              }
+            >
+              <Link to="/styleguide">스타일 가이드</Link>
             </li>
             <li>
               <Link to="/">컴포넌트</Link>
@@ -30,7 +48,9 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <button type="button" className="mob-menu"></button>
+        <button type="button" className="mob-menu" onClick={handleClick}>
+          <span className="sr-only">전체메뉴</span>
+        </button>
       </div>
     </div>
   );

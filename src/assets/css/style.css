@@ -12475,6 +12475,7 @@ body {
   right: 2.4rem;
   width: 2.4rem;
   height: 2.4rem;
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_close_24.svg") no-repeat;
   background-size: contain;
 }
 #g-wrap #g-container .g-aside .inner {
@@ -13549,6 +13550,7 @@ body {
     display: inline-flex;
     width: 2.4rem;
     height: 2.4rem;
+    background: url("https://uiux.egovframe.go.kr/resources/img/pattern/layout/head_ico_navi_all.svg") no-repeat center;
     background-size: contain;
   }
   #g-wrap #g-container {

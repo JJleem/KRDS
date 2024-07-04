@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import VisualArea from "./visualArea/VisualArea";
 import MainArea from "./mainArea/MainArea";
 import FigmaArea from "./figmaArea/FigmaArea";
@@ -6,6 +6,26 @@ import FigmaAreaPdf from "./figmaArea/FigmaAreaPdf";
 import SearchArea from "./searchArea/SearchArea";
 
 const Gcontent = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const handleGoToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="g-content">
       {/* visual area */}
@@ -17,7 +37,12 @@ const Gcontent = () => {
       <FigmaAreaPdf />
       {/* 검색 서비스 */}
       <SearchArea />
-      <button className="btn tertiary sm go-top active" type="button">
+
+      <button
+        className={`btn tertiary sm go-top ${scrollY > 1100 ? "active" : ""}`}
+        type="button"
+        onClick={handleGoToTop}
+      >
         Top
       </button>
     </div>

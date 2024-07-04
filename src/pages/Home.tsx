@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import db from "../data/db.json";
 import { Helmet } from "react-helmet";
-import Gaside from "../Components/home/aside/Gaside";
+import Gaside from "../Components/common/aside/Gaside";
 import Gcontent from "../Components/home/content/Gcontent";
 
 const Home = () => {
@@ -10,8 +10,6 @@ const Home = () => {
       <Helmet defaultTitle="KRDS" />
       {/* 왼쪽 메뉴 영역 */}
       <Gaside />
-
-    
       <Gcontent />
     </div>
   );

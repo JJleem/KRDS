@@ -55,7 +55,10 @@ const SearchArea = () => {
                   <h4 className="tit keyword">
                     {db.title}
                     {db.sub === "" ? null : (
-                      <span className="sub">{db.sub}</span>
+                      <span className="sub">
+                        {""}
+                        {db.sub}
+                      </span>
                     )}
                   </h4>
                   <p className="desc keyword">{db.desc}</p>

@@ -1,17 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { toggleState } from "../../../atom/Atom";
+import { useRecoilState } from "recoil";
 
 const Gaside = () => {
+  const [clickedToggle, setClickedToggle] = useRecoilState(toggleState);
   const [clickedIndex, setClickedIndex] = useState(-1);
+  const TogglehandleClick = () => {
+    setClickedToggle(!clickedToggle);
+  };
   const handleClick = (index: number) => {
     setClickedIndex(clickedIndex === index ? -1 : index);
   };
-  const location = useLocation();
+
   return (
     <div
-      className="g-aside includeJsGuide"
-      style={{ display: location.pathname === "/" ? "none" : "block" }}
+      className={
+        clickedToggle
+          ? " g-aside includeJsGuide active"
+          : "g-aside includeJsGuide"
+      }
+      // style={{ display: location.pathname === "/" ? "none" : "block" }}
     >
       <div className="inner">
         <div className="lnb">
@@ -50,7 +60,9 @@ const Gaside = () => {
                   <Link to="/">모든 사용자를 포용하는 서비스</Link>
                 </li>
                 <li>
-                  <Link to="/">공통된 경험 안에서 개별 특성을 고려한 서비스</Link>
+                  <Link to="/">
+                    공통된 경험 안에서 개별 특성을 고려한 서비스
+                  </Link>
                 </li>
                 <li>
                   <Link to="/">빠르고 간단한 서비스</Link>
@@ -411,6 +423,13 @@ const Gaside = () => {
               </ul>
             </li>
           </ul>
+          <button
+            type="button"
+            className="btn btn-ico ico-close"
+            onClick={TogglehandleClick}
+          >
+            <span className="sr-only">전체메뉴 닫기</span>
+          </button>
         </div>
       </div>
     </div>

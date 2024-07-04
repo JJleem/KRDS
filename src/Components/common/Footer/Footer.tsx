@@ -17,8 +17,10 @@ const Footer = () => {
             </li>
             <li>
               <strong className="strong">한국지능정보사회진흥원</strong>
-              <Link to="tel:053-230-1923">053-230-1923</Link> |
-              <Link to="mailto:uiux@nia.or.kr">uiux@nia.or.kr</Link>
+              <span>
+                <Link to="tel:053-230-1923">053-230-1923</Link> | {""}
+                <Link to="mailto:uiux@nia.or.kr">uiux@nia.or.kr</Link>
+              </span>
             </li>
           </ul>
           <span className="copyright">©KRDS. ALL RIGHTS RESERVED.</span>

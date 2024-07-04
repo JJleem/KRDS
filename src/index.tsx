@@ -9,25 +9,9 @@ import Header from "./Components/common/Header/Header";
 import HeaderTop from "./Components/common/Header-top/HeaderTop";
 import Footer from "./Components/common/Footer/Footer";
 
+
+
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
-root.render(
-  <BrowserRouter>
-    <div id="g-wrap" className="main">
-      <HeaderTop />
-      <Header />
-
-      <Routes>
-        <Route path="/" element={<App />} />
-      </Routes>
-      <Routes>
-        <Route path="/guideline" element={<Guideline />} />
-      </Routes>
-      <Routes>
-        <Route path="/styleguide" element={<StyleGuide />} />
-      </Routes>
-      <Footer />
-    </div>
-  </BrowserRouter>
-);
+root.render(<App />);
