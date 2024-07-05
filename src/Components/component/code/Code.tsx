@@ -1,11 +1,36 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const Code = () => {
+  const [copyState, setCopyState] = useState("copy");
+  const handleCopyClick = () => {
+    navigator.clipboard.writeText(`
+<div id="header-top">
+	<div class="toggle-wrap">
+		<div class="toggle-head">
+			<div class="inner">
+				<span class="nuri-txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+				<button type="button" class="btn btn-txt ico-arr-down toggle-btn xsm">공식 누리집 확인방법<span class="sr-only">열기</span></button>
+			</div>
+		</div>
+		<div class="toggle-body">
+			<div class="inner">
+				<dl class="dl nuri">
+					<dt class="dt">공식 누리집 주소 확인하기</dt>
+					<dd class="dd">go.kr 주소를 사용하는 누리집은 대한민국 정부기관이 관리하는 누리집입니다.<br class="br">이밖에 or.kr 또는 .kr등 다른 도메인 주소를 사용하고 있다면 아래 URL에서 도메인 주소를 확인해 보세요</dd>
+					<dd><a href="javascript:window.open('https://uiux.egovframe.go.kr/search.do?query='+window.location.host,'_blank');" class="btn btn-txt ico-go xsm">운영중인 공식 누리집보기</a></dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</div>
+
+    `);
+    setCopyState("copied");
+  };
   return (
     <div
       id="accordionCollapse02_01_01"
       className="accordion-collapse collapse"
-      aria-expanded="false"
       aria-labelledby="accordionHeader02_01_01"
     >
       <div className="accordion-body">
@@ -31,7 +56,6 @@ const Code = () => {
                     <span className="token punctuation">"</span>
                   </span>
                   <span className="token punctuation">&gt;</span>
-                  <br />
                 </span>
                 <span className="token tag">
                   <span className="token tag">
@@ -46,7 +70,6 @@ const Code = () => {
                     <span className="token punctuation">"</span>
                   </span>
                   <span className="token punctuation">&gt;</span>
-                  <br />
                 </span>
                 <span className="token tag">
                   <span className="token tag">
@@ -345,9 +368,10 @@ const Code = () => {
                 <button
                   className="copy-to-clipboard-button"
                   type="button"
-                  data-copy-state="copy"
+                  data-copy-state={copyState}
+                  onClick={handleCopyClick}
                 >
-                  <span>Copy</span>
+                  <span>{copyState.toUpperCase()}</span>
                 </button>
               </div>
             </div>

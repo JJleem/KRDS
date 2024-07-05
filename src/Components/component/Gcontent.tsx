@@ -180,14 +180,12 @@ const Gcontent = () => {
               </div>
 
               <div className="g-code-wrap accordion">
-                <div
-                  className={`accordion-item ${isClicked ? "active" : ""}`}
-                  onClick={handleClick}
-                >
+                <div className={`accordion-item ${isClicked ? "active" : ""}`}>
                   <h2 id="accordionHeader02_01_01" className="accordion-header">
                     <button
                       type="button"
                       className={`btn-accordion ${isClicked ? "active" : ""}`}
+                      onClick={handleClick}
                       aria-controls="accordionCollapse02_01_01"
                     >
                       코드 확인하기

@@ -283,7 +283,7 @@ const Gaside = () => {
                 기본 패턴
               </button>
               <ul className="depth2">
-                <li>
+                <li className={clickedIndex === 4 ? "active" : ""}>
                   <Link to="/">개인 식별 정보 입력</Link>
                 </li>
                 <li>
@@ -326,10 +326,10 @@ const Gaside = () => {
                 서비스 패턴
               </button>
               <ul className="depth2">
-                <li>
+                <li className={clickedIndex === 5 ? "active" : ""}>
                   <Link to="/">방문</Link>
                   <ul className="depth3">
-                    <li>
+                    <li className={clickedIndex === 5 ? "active" : ""}>
                       <Link to="/">개요</Link>
                     </li>
                     <li>
