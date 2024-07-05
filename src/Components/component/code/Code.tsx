@@ -1,15 +1,6 @@
 import React, { useEffect } from "react";
-import Prism from "prismjs";
-import "prismjs/components/prism-typescript";
 
 const Code = () => {
-  // const codeRef = React.useRef<HTMLPreElement>(null);
-
-  // React.useEffect(() => {
-  //   if (codeRef.current) {
-  //     Prism.highlightElement(codeRef.current);
-  //   }
-  // }, []);
   return (
     <div
       id="accordionCollapse02_01_01"
