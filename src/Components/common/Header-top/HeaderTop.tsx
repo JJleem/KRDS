@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const HeaderTop = () => {
@@ -6,6 +6,28 @@ const HeaderTop = () => {
   const handleClick = () => {
     setIsClicked(!isClicked);
   };
+  const [windowWidth, setWindowWidth] = useState("183px");
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width <= 534) {
+        setWindowWidth("228px");
+      } else if (width <= 693) {
+        setWindowWidth("205px");
+      } else {
+        setWindowWidth("183px");
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div id="g-header-top" className="includeJsGuide">
       <div className="toggle-wrap">
@@ -30,7 +52,7 @@ const HeaderTop = () => {
           className={`toggle-body ${isClicked ? "active" : ""}`}
           onClick={handleClick}
           style={{
-            height: isClicked ? "183px" : "",
+            height: isClicked ? `${windowWidth}` : "",
           }}
         >
           <div className="inner">

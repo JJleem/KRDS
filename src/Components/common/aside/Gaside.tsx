@@ -1,18 +1,37 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { toggleState } from "../../../atom/Atom";
 import { useRecoilState } from "recoil";
 
 const Gaside = () => {
+  const location = useLocation();
+
   const [clickedToggle, setClickedToggle] = useRecoilState(toggleState);
-  const [clickedIndex, setClickedIndex] = useState(-1);
   const TogglehandleClick = () => {
     setClickedToggle(!clickedToggle);
   };
+
+  const [clickedIndex, setClickedIndex] = useState(-1);
+
   const handleClick = (index: number) => {
     setClickedIndex(clickedIndex === index ? -1 : index);
   };
+  useEffect(() => {
+    if (location.pathname === "/guideline") {
+      setClickedIndex(0);
+    } else if (location.pathname === "/foundation") {
+      setClickedIndex(1);
+    } else if (location.pathname === "/styleguide") {
+      setClickedIndex(2);
+    } else if (location.pathname === "/component") {
+      setClickedIndex(3);
+    } else if (location.pathname === "/global") {
+      setClickedIndex(4);
+    } else if (location.pathname === "/service") {
+      setClickedIndex(5);
+    }
+  }, [location.pathname]);
 
   return (
     <div
@@ -34,14 +53,16 @@ const Gaside = () => {
                 소개
               </button>
               <ul className="depth2">
-                <li>
-                  <Link to="/">개요</Link>
+                <li className={clickedIndex === 0 ? "active" : ""}>
+                  <Link to="/guideline">개요</Link>
                 </li>
                 <li>
-                  <Link to="/">가이드라인의 구성</Link>
+                  <Link to="/guideline/guideline_02">가이드라인의 구성</Link>
                 </li>
                 <li>
-                  <Link to="/">가이드라인의 활용 방법</Link>
+                  <Link to="/guideline/guideline_03">
+                    가이드라인의 활용 방법
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -53,7 +74,7 @@ const Gaside = () => {
                 디자인 원칙
               </button>
               <ul className="depth2">
-                <li>
+                <li className={clickedIndex === 1 ? "active" : ""}>
                   <Link to="/">사용자 중심의 서비스</Link>
                 </li>
                 <li>
@@ -86,7 +107,7 @@ const Gaside = () => {
                 스타일 가이드
               </button>
               <ul className="depth2">
-                <li>
+                <li className={clickedIndex === 2 ? "active" : ""}>
                   <Link to="/">적용 범위 및 구분</Link>
                 </li>
                 <li>
@@ -124,10 +145,10 @@ const Gaside = () => {
                 컴포넌트
               </button>
               <ul className="depth2">
-                <li>
+                <li className={clickedIndex === 3 ? "active" : ""}>
                   <Link to="/">아이덴티티</Link>
                   <ul className="depth3">
-                    <li>
+                    <li className={clickedIndex === 3 ? "active" : ""}>
                       <Link to="/">
                         공식 배너<span className="sub"></span>(Masthead)
                       </Link>
@@ -423,6 +444,11 @@ const Gaside = () => {
               </ul>
             </li>
           </ul>
+          {location.pathname === "/" ? null : (
+            <Link to={"/"} className="side-bn">
+              정부기관 공식누리집 검색
+            </Link>
+          )}
           <button
             type="button"
             className="btn btn-ico ico-close"

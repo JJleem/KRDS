@@ -22,29 +22,53 @@ const Header = () => {
           <ul>
             <li
               className={
-                location.pathname === "/guideline" ? "active" : undefined
+                location.pathname.startsWith("/guideline")
+                  ? "active"
+                  : undefined
               }
             >
               <Link to="/guideline">소개</Link>
             </li>
-            <li>
-              <Link to="/">디자인 원칙</Link>
+            <li
+              className={
+                location.pathname.startsWith("/foundation")
+                  ? "active"
+                  : undefined
+              }
+            >
+              <Link to="/foundation">디자인 원칙</Link>
             </li>
             <li
               className={
-                location.pathname === "/styleguide" ? "active" : undefined
+                location.pathname.startsWith("/styleguide")
+                  ? "active"
+                  : undefined
               }
             >
               <Link to="/styleguide">스타일 가이드</Link>
             </li>
-            <li>
-              <Link to="/">컴포넌트</Link>
+            <li
+              className={
+                location.pathname.startsWith("/component")
+                  ? "active"
+                  : undefined
+              }
+            >
+              <Link to="/component">컴포넌트</Link>
             </li>
-            <li>
-              <Link to="/">기본 패턴</Link>
+            <li
+              className={
+                location.pathname.startsWith("/global") ? "active" : undefined
+              }
+            >
+              <Link to="/global">기본 패턴</Link>
             </li>
-            <li>
-              <Link to="/">서비스 패턴</Link>
+            <li
+              className={
+                location.pathname.startsWith("/service") ? "active" : undefined
+              }
+            >
+              <Link to="/service">서비스 패턴</Link>
             </li>
           </ul>
         </nav>

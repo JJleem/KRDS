@@ -139,7 +139,8 @@ body {
             @include pseudo();
             width: 2rem;
             height: 2rem;
-
+            background: url("https://uiux.egovframe.go.kr/resources/img/guide/common/arr_lnb.svg")
+              no-repeat;
             background-size: contain;
             transition: $transition-base;
             transform: translateY(-50%) rotate(-90deg);

@@ -4,28 +4,9 @@ import MainArea from "./mainArea/MainArea";
 import FigmaArea from "./figmaArea/FigmaArea";
 import FigmaAreaPdf from "./figmaArea/FigmaAreaPdf";
 import SearchArea from "./searchArea/SearchArea";
+import TopBtn from "../../common/topbtn/TopBtn";
 
 const Gcontent = () => {
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-  const handleGoToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <div className="g-content">
       {/* visual area */}
@@ -37,14 +18,7 @@ const Gcontent = () => {
       <FigmaAreaPdf />
       {/* 검색 서비스 */}
       <SearchArea />
-
-      <button
-        className={`btn tertiary sm go-top ${scrollY > 1100 ? "active" : ""}`}
-        type="button"
-        onClick={handleGoToTop}
-      >
-        Top
-      </button>
+      <TopBtn />
     </div>
   );
 };
