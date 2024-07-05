@@ -10,7 +10,17 @@ const MainArea = () => {
         <ul className="search-list">
           {db.main.map((db) => (
             <li className="li" key={db.id}>
-              <Link to="/">
+              <Link
+                to={
+                  db.id === 1
+                    ? "/component"
+                    : db.id === 2
+                    ? "/global"
+                    : db.id === 3
+                    ? "/service"
+                    : "/styleguide"
+                }
+              >
                 <div
                   className={`img-wrap main_${db.id}`}
                   style={{ backgroundImage: `url("${db.img}")` }}

@@ -15,6 +15,7 @@ import { useRecoilState } from "recoil";
 import { toggleState } from "./atom/Atom";
 import Wrap from "./Wrap";
 import Guideline02 from "./pages/guideline/Guideline02";
+import Guideline03 from "./pages/guideline/Guideline03";
 import Foundation from "./pages/foundation/Foundation";
 import Component from "./pages/component/Component";
 import Global from "./pages/global/Global";
@@ -24,9 +25,8 @@ function App() {
     <BrowserRouter>
       <RecoilRoot>
         <Wrap>
-      
-            <HeaderTop />
-  
+          <HeaderTop />
+
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -34,6 +34,7 @@ function App() {
           <Routes>
             <Route path="/guideline" element={<Guideline />} />
             <Route path="/guideline/guideline_02" element={<Guideline02 />} />
+            <Route path="/guideline/guideline_03" element={<Guideline03 />} />
           </Routes>
           <Routes>
             <Route path="/foundation" element={<Foundation />} />

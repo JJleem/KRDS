@@ -18,17 +18,17 @@ const Gaside = () => {
     setClickedIndex(clickedIndex === index ? -1 : index);
   };
   useEffect(() => {
-    if (location.pathname === "/guideline") {
+    if (location.pathname.startsWith("/guideline")) {
       setClickedIndex(0);
-    } else if (location.pathname === "/foundation") {
+    } else if (location.pathname.startsWith("/foundation")) {
       setClickedIndex(1);
-    } else if (location.pathname === "/styleguide") {
+    } else if (location.pathname.startsWith("/styleguide")) {
       setClickedIndex(2);
-    } else if (location.pathname === "/component") {
+    } else if (location.pathname.startsWith("/component")) {
       setClickedIndex(3);
-    } else if (location.pathname === "/global") {
+    } else if (location.pathname.startsWith("/global")) {
       setClickedIndex(4);
-    } else if (location.pathname === "/service") {
+    } else if (location.pathname.startsWith("/service")) {
       setClickedIndex(5);
     }
   }, [location.pathname]);
@@ -53,13 +53,30 @@ const Gaside = () => {
                 소개
               </button>
               <ul className="depth2">
-                <li className={clickedIndex === 0 ? "active" : ""}>
+                <li
+                  className={location.pathname === "/guideline" ? "active" : ""}
+                  onClick={TogglehandleClick}
+                >
                   <Link to="/guideline">개요</Link>
                 </li>
-                <li>
+                <li
+                  className={
+                    location.pathname === "/guideline/guideline_02"
+                      ? "active"
+                      : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
                   <Link to="/guideline/guideline_02">가이드라인의 구성</Link>
                 </li>
-                <li>
+                <li
+                  className={
+                    location.pathname === "/guideline/guideline_03"
+                      ? "active"
+                      : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
                   <Link to="/guideline/guideline_03">
                     가이드라인의 활용 방법
                   </Link>
@@ -74,8 +91,11 @@ const Gaside = () => {
                 디자인 원칙
               </button>
               <ul className="depth2">
-                <li className={clickedIndex === 1 ? "active" : ""}>
-                  <Link to="/">사용자 중심의 서비스</Link>
+                <li
+                  className={clickedIndex === 1 ? "active" : ""}
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/foundation">사용자 중심의 서비스</Link>
                 </li>
                 <li>
                   <Link to="/">모든 사용자를 포용하는 서비스</Link>
@@ -107,8 +127,11 @@ const Gaside = () => {
                 스타일 가이드
               </button>
               <ul className="depth2">
-                <li className={clickedIndex === 2 ? "active" : ""}>
-                  <Link to="/">적용 범위 및 구분</Link>
+                <li
+                  className={clickedIndex === 2 ? "active" : ""}
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/styleguide">적용 범위 및 구분</Link>
                 </li>
                 <li>
                   <Link to="/">
@@ -145,11 +168,17 @@ const Gaside = () => {
                 컴포넌트
               </button>
               <ul className="depth2">
-                <li className={clickedIndex === 3 ? "active" : ""}>
-                  <Link to="/">아이덴티티</Link>
+                <li
+                  className={clickedIndex === 3 ? "active" : ""}
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/component">아이덴티티</Link>
                   <ul className="depth3">
-                    <li className={clickedIndex === 3 ? "active" : ""}>
-                      <Link to="/">
+                    <li
+                      className={clickedIndex === 3 ? "active" : ""}
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component">
                         공식 배너<span className="sub"></span>(Masthead)
                       </Link>
                     </li>
@@ -283,8 +312,11 @@ const Gaside = () => {
                 기본 패턴
               </button>
               <ul className="depth2">
-                <li className={clickedIndex === 4 ? "active" : ""}>
-                  <Link to="/">개인 식별 정보 입력</Link>
+                <li
+                  className={clickedIndex === 4 ? "active" : ""}
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/global">개인 식별 정보 입력</Link>
                 </li>
                 <li>
                   <Link to="/">도움</Link>
@@ -326,11 +358,17 @@ const Gaside = () => {
                 서비스 패턴
               </button>
               <ul className="depth2">
-                <li className={clickedIndex === 5 ? "active" : ""}>
-                  <Link to="/">방문</Link>
+                <li
+                  className={clickedIndex === 5 ? "active" : ""}
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/service">방문</Link>
                   <ul className="depth3">
-                    <li className={clickedIndex === 5 ? "active" : ""}>
-                      <Link to="/">개요</Link>
+                    <li
+                      className={clickedIndex === 5 ? "active" : ""}
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service">개요</Link>
                     </li>
                     <li>
                       <Link to="/">방문</Link>
@@ -444,7 +482,7 @@ const Gaside = () => {
               </ul>
             </li>
           </ul>
-          {location.pathname === "/" ? null : (
+          {location.pathname === "/" && !clickedToggle ? null : (
             <Link to={"/"} className="side-bn">
               정부기관 공식누리집 검색
             </Link>
