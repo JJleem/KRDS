@@ -92,30 +92,84 @@ const Gaside = () => {
               </button>
               <ul className="depth2">
                 <li
-                  className={clickedIndex === 1 ? "active" : ""}
+                  className={
+                    location.pathname === "/foundation" ? "active" : ""
+                  }
                   onClick={TogglehandleClick}
                 >
                   <Link to="/foundation">사용자 중심의 서비스</Link>
                 </li>
-                <li>
-                  <Link to="/">모든 사용자를 포용하는 서비스</Link>
+                <li
+                  className={
+                    location.pathname === "/foundation/foundation_02"
+                      ? "active"
+                      : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/foundation/foundation_02">
+                    모든 사용자를 포용하는 서비스
+                  </Link>
                 </li>
-                <li>
-                  <Link to="/">
+                <li
+                  className={
+                    location.pathname === "/foundation/foundation_03"
+                      ? "active"
+                      : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/foundation/foundation_03">
                     공통된 경험 안에서 개별 특성을 고려한 서비스
                   </Link>
                 </li>
-                <li>
-                  <Link to="/">빠르고 간단한 서비스</Link>
+                <li
+                  className={
+                    location.pathname === "/foundation/foundation_04"
+                      ? "active"
+                      : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/foundation/foundation_04">
+                    빠르고 간단한 서비스
+                  </Link>
                 </li>
-                <li>
-                  <Link to="/">쉽게 이해 하고 사용할 수 있는 서비스</Link>
+                <li
+                  className={
+                    location.pathname === "/foundation/foundation_05"
+                      ? "active"
+                      : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/foundation/foundation_05">
+                    쉽게 이해 하고 사용할 수 있는 서비스
+                  </Link>
                 </li>
-                <li>
-                  <Link to="/">사용자의 다양한 상황을 고려하는 서비스</Link>
+                <li
+                  className={
+                    location.pathname === "/foundation/foundation_06"
+                      ? "active"
+                      : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/foundation/foundation_06">
+                    사용자의 다양한 상황을 고려하는 서비스
+                  </Link>
                 </li>
-                <li>
-                  <Link to="/">신뢰할 수 있는 서비스</Link>
+                <li
+                  className={
+                    location.pathname === "/foundation/foundation_07"
+                      ? "active"
+                      : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/foundation/foundation_07">
+                    신뢰할 수 있는 서비스
+                  </Link>
                 </li>
               </ul>
             </li>

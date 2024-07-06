@@ -7,7 +7,7 @@ const Foundation = () => {
     <div id="g-container">
       <Helmet defaultTitle="사용자 중심의 서비스 | 디자인 원칙 - KRDS" />
       <Gaside />
-      <Gcontent/>
+      <Gcontent />
     </div>
   );
 };
