@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Gaside from "../../../Components/common/aside/Gaside";
-import Gcontent_Breadcrumb from "../../../Components/component/search/Gcontent_Breadcrumb";
+import Gcontent_Breadcrumb from "../../../Components/component/search/breadcrumb/Gcontent_Breadcrumb";
 
 const Component_Breadcrumb = () => {
   return (

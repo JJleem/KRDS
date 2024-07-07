@@ -107,13 +107,19 @@ function App() {
           </Routes>
           <Routes>
             {/* ///////////////identity */}
-            <Route path="/component" element={<Component />} />
+            <Route path="/component/identity" element={<Component />} />
             <Route
-              path="/component/identifier"
+              path="/component/identity/identifier"
               element={<Component_Identifier />}
             />
-            <Route path="/component/footer" element={<Component_Footer />} />
-            <Route path="/component/header" element={<Component_Header />} />
+            <Route
+              path="/component/identity/footer"
+              element={<Component_Footer />}
+            />
+            <Route
+              path="/component/identity/header"
+              element={<Component_Header />}
+            />
             {/* ///////////////search */}
             <Route path="/component/search" element={<Component_SkipLink />} />
             <Route

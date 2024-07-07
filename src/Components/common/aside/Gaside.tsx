@@ -254,55 +254,61 @@ const Gaside = () => {
               </button>
               <ul className="depth2">
                 <li
-                  className={location.pathname === "/component" ? "active" : ""}
+                  className={
+                    location.pathname.startsWith("/component/identity")
+                      ? "active"
+                      : ""
+                  }
                   onClick={TogglehandleClick}
                 >
-                  <Link to="/component">아이덴티티</Link>
+                  <Link to="/component/identity">아이덴티티</Link>
                   <ul className="depth3">
                     <li
                       className={
-                        location.pathname === "/component" ? "active" : ""
-                      }
-                      onClick={TogglehandleClick}
-                    >
-                      <Link to="/component">
-                        공식 배너<span className="sub"></span>(Masthead)
-                      </Link>
-                    </li>
-                    <li
-                      className={
-                        location.pathname === "/component/identifier"
+                        location.pathname === "/component/identity"
                           ? "active"
                           : ""
                       }
                       onClick={TogglehandleClick}
                     >
-                      <Link to="/component/identifier">
+                      <Link to="/component/identity">
+                        공식 배너<span className="sub"></span>(Masthead)
+                      </Link>
+                    </li>
+                    <li
+                      className={
+                        location.pathname === "/component/identity/identifier"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/identity/identifier">
                         운영기관 식별자
                         <span className="sub">(Identifier)</span>
                       </Link>
                     </li>
                     <li
                       className={
-                        location.pathname === "/component/footer"
+                        location.pathname === "/component/identity/footer"
                           ? "active"
                           : ""
                       }
                       onClick={TogglehandleClick}
                     >
-                      <Link to="/component/footer">
+                      <Link to="/component/identity/footer">
                         푸터<span className="sub">(Footer)</span>
                       </Link>
                     </li>
                     <li
                       className={
-                        location.pathname === "/component/header"
+                        location.pathname === "/component/identity/header"
                           ? "active"
                           : ""
                       }
                       onClick={TogglehandleClick}
                     >
-                      <Link to="/component/header">
+                      <Link to="/component/identity/header">
                         헤더<span className="sub">(Header)</span>
                       </Link>
                     </li>
@@ -310,7 +316,9 @@ const Gaside = () => {
                 </li>
                 <li
                   className={
-                    location.pathname === "/component/search" ? "active" : ""
+                    location.pathname.startsWith("/component/search")
+                      ? "active"
+                      : ""
                   }
                   onClick={TogglehandleClick}
                 >
