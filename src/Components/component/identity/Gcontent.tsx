@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Code from "./code/Code";
-import HeaderTop from "../common/Header-top/HeaderTop";
+import HeaderTop from "../../common/Header-top/HeaderTop";
 const Gcontent = () => {
   const [isClicked, setIsClicked] = useState(false);
   const handleClick = () => {

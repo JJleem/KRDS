@@ -7735,6 +7735,48 @@ input[type=checkbox] {
     height: 2.4rem;
   }
 }
+/* ** 도움말 박스 ** */
+.g-description-area .g-conts-area .helper-box {
+  width: 100%;
+  padding: var(--krds-spacer-6);
+  background-color: var(--krds-secondary-5);
+  border: 1px solid var(--krds-gray-20);
+  border-radius: 0.6rem;
+}
+.g-description-area .g-conts-area .helper-box .helper-tit {
+  display: flex;
+  position: relative;
+  color: var(--krds-secondary);
+  font-weight: 700;
+}
+.g-description-area .g-conts-area .helper-box .helper-tit::before {
+  margin-right: var(--krds-spacer-1);
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  margin-top: var(--krds-spacer-default2);
+}
+.g-description-area .g-conts-area .helper-box .info-list > li + li {
+  margin-top: var(--krds-spacer-2);
+}
+.g-description-area .g-conts-area .helper-box .helper-desc-wrap {
+  margin-top: var(--krds-spacer-5);
+  margin-left: var(--krds-spacer-6);
+}
+.g-description-area .g-conts-area .helper-box .helper-desc-wrap .info-list:first-child {
+  margin-top: 0;
+}
+.g-description-area .g-conts-area .helper-box.refer {
+  padding: var(--krds-spacer-4);
+  background-color: var(--krds-gray-5);
+}
+.g-description-area .g-conts-area .helper-box.refer .helper-tit {
+  color: var(--krds-gray-90);
+}
+.g-description-area .g-conts-area .helper-box.refer .helper-desc-wrap {
+  margin-top: var(--krds-spacer-4);
+}
+
 /* 공통 */
 /* **** area mixin ****/
 /* **** text attr ****/
@@ -10724,6 +10766,15 @@ input[type=checkbox] {
 }
 .assess-question-wrap .info-list > li .info-list > li > .helper-box {
   margin-top: var(--krds-spacer-4);
+}
+.assess-question-wrap .helper-box.advice {
+  background-color: #faedeb !important;
+}
+.assess-question-wrap .helper-box.advice .helper-tit {
+  color: var(--krds-gray-90);
+}
+.assess-question-wrap .helper-box.advice .helper-tit::before {
+  display: none;
 }
 .assess-question-wrap .outline {
   display: flex;

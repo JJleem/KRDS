@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import Gaside from "../../Components/common/aside/Gaside";
-import Gcontent from "../../Components/component/Gcontent";
+import Gaside from "../../../Components/common/aside/Gaside";
+import Gcontent from "../../../Components/component/identity/Gcontent";
 const Component = () => {
   return (
     <div id="g-container">

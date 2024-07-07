@@ -182,33 +182,64 @@ const Gaside = () => {
               </button>
               <ul className="depth2">
                 <li
-                  className={clickedIndex === 2 ? "active" : ""}
+                  className={
+                    location.pathname === "/styleguide" ? "active" : ""
+                  }
                   onClick={TogglehandleClick}
                 >
                   <Link to="/styleguide">적용 범위 및 구분</Link>
                 </li>
-                <li>
-                  <Link to="/">
+                <li
+                  className={
+                    location.pathname === "/styleguide/color" ? "active" : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/styleguide/color">
                     색상<span className="sub">(Color)</span>
                   </Link>
                 </li>
-                <li>
-                  <Link to="/">
+                <li
+                  className={
+                    location.pathname === "/styleguide/typography"
+                      ? "active"
+                      : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/styleguide/typography">
                     서체<span className="sub">(Typography)</span>
                   </Link>
                 </li>
-                <li>
-                  <Link to="/">
+                <li
+                  className={
+                    location.pathname === "/styleguide/shape" ? "active" : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/styleguide/shape">
                     형태<span className="sub">(Shape)</span>
                   </Link>
                 </li>
-                <li>
-                  <Link to="/">
+                <li
+                  className={
+                    location.pathname === "/styleguide/layout" ? "active" : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/styleguide/layout">
                     배치<span className="sub">(Layout)</span>
                   </Link>
                 </li>
-                <li>
-                  <Link to="/">
+                <li
+                  className={
+                    location.pathname === "/styleguide/systemicon"
+                      ? "active"
+                      : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/styleguide/systemicon">
                     아이콘<span className="sub">(System icon)</span>
                   </Link>
                 </li>
@@ -223,70 +254,141 @@ const Gaside = () => {
               </button>
               <ul className="depth2">
                 <li
-                  className={clickedIndex === 3 ? "active" : ""}
+                  className={location.pathname === "/component" ? "active" : ""}
                   onClick={TogglehandleClick}
                 >
                   <Link to="/component">아이덴티티</Link>
                   <ul className="depth3">
                     <li
-                      className={clickedIndex === 3 ? "active" : ""}
+                      className={
+                        location.pathname === "/component" ? "active" : ""
+                      }
                       onClick={TogglehandleClick}
                     >
                       <Link to="/component">
                         공식 배너<span className="sub"></span>(Masthead)
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/">
+                    <li
+                      className={
+                        location.pathname === "/component/identifier"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/identifier">
                         운영기관 식별자
                         <span className="sub">(Identifier)</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/">
+                    <li
+                      className={
+                        location.pathname === "/component/footer"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/footer">
                         푸터<span className="sub">(Footer)</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/">
+                    <li
+                      className={
+                        location.pathname === "/component/header"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/header">
                         헤더<span className="sub">(Header)</span>
                       </Link>
                     </li>
                   </ul>
                 </li>
-                <li>
-                  <Link to="/">탐색</Link>
+                <li
+                  className={
+                    location.pathname === "/component/search" ? "active" : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/component/search">탐색</Link>
                   <ul className="depth3">
-                    <li>
-                      <Link to="/">
+                    <li
+                      className={
+                        location.pathname === "/component/search"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/search">
                         건너 뛰기 링크<span className="sub">(Skip link)</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/">
+                    <li
+                      className={
+                        location.pathname === "/component/search/mainmenu"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/search/mainmenu">
                         메인 메뉴
                         <span className="sub">(Main menu)</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/">
+                    <li
+                      className={
+                        location.pathname === "/component/search/breadcrumb"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/search/breadcrumb">
                         브레드크럼<span className="sub">(Breadcrumb)</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/">
+                    <li
+                      className={
+                        location.pathname === "/component/search/sidenavigation"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/search/sidenavigation">
                         사이드 메뉴
                         <span className="sub">(Side navigation)</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/">
+                    <li
+                      className={
+                        location.pathname ===
+                        "/component/search/inpagenavigation"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/search/inpagenavigation">
                         콘텐츠 내 탐색
                         <span className="sub">(In-page navigation)</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/">
+                    <li
+                      className={
+                        location.pathname === "/component/search/pagination"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/search/pagination">
                         페이지네이션<span className="sub">(Pagination)</span>
                       </Link>
                     </li>

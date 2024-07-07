@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "../src/assets/css/style.css";
+import "../src/assets/scss/style.css";
+// import "../src/assets/scss/css/style.css";
 
 import Header from "./Components/common/Header/Header";
 import HeaderTop from "./Components/common/Header-top/HeaderTop";
@@ -24,12 +25,26 @@ import Foundation06 from "./pages/foundation/Foundation06";
 import Foundation07 from "./pages/foundation/Foundation07";
 //StyleGuide
 import StyleGuide from "./pages/styleguide/StyleGuide";
+import StyleGuide_Color from "./pages/styleguide/StyleGuide_Color";
+import StyleGuide_Typography from "./pages/styleguide/StyleGuide_Typography";
 //Component
-import Component from "./pages/component/Component";
+import Component from "./pages/component/identity/Component";
 //Global
 import Global from "./pages/global/Global";
 //Service
 import Service from "./pages/service/Service";
+import StyleGuide_Shape from "./pages/styleguide/StyleGuide_Shape";
+import StyleGuide_Layout from "./pages/styleguide/StyleGuide_Layout";
+import StyleGuide_SystemIcon from "./pages/styleguide/StyleGuide_SystemIcon";
+import Component_Footer from "./pages/component/identity/Component_Footer";
+import Component_Identifier from "./pages/component/identity/Component_Identifier";
+import Component_Header from "./pages/component/identity/Component_Header";
+import Component_SkipLink from "./pages/component/search/Component_SkipLink";
+import Component_MainMenu from "./pages/component/search/Component_MainMenu";
+import Component_Breadcrumb from "./pages/component/search/Component_Breadcrumb";
+import Component_SideNavigation from "./pages/component/search/Component_SideNavigation";
+import Component_InPageNavigation from "./pages/component/search/Component_InPageNavigation";
+import Component_Pagination from "./pages/component/search/Component_Pagination";
 
 function App() {
   return (
@@ -76,9 +91,52 @@ function App() {
           </Routes>
           <Routes>
             <Route path="/styleguide" element={<StyleGuide />} />
+            <Route path="/styleguide/color" element={<StyleGuide_Color />} />
+
+            <Route
+              path="/styleguide/typography"
+              element={<StyleGuide_Typography />}
+            />
+
+            <Route path="/styleguide/shape" element={<StyleGuide_Shape />} />
+            <Route path="/styleguide/layout" element={<StyleGuide_Layout />} />
+            <Route
+              path="/styleguide/systemicon"
+              element={<StyleGuide_SystemIcon />}
+            />
           </Routes>
           <Routes>
+            {/* ///////////////identity */}
             <Route path="/component" element={<Component />} />
+            <Route
+              path="/component/identifier"
+              element={<Component_Identifier />}
+            />
+            <Route path="/component/footer" element={<Component_Footer />} />
+            <Route path="/component/header" element={<Component_Header />} />
+            {/* ///////////////search */}
+            <Route path="/component/search" element={<Component_SkipLink />} />
+            <Route
+              path="/component/search/mainmenu"
+              element={<Component_MainMenu />}
+            />
+            <Route
+              path="/component/search/breadcrumb"
+              element={<Component_Breadcrumb />}
+            />
+            <Route
+              path="/component/search/sidenavigation"
+              element={<Component_SideNavigation />}
+            />
+            <Route
+              path="/component/search/inpagenavigation"
+              element={<Component_InPageNavigation />}
+            />
+            <Route
+              path="/component/search/pagination"
+              element={<Component_Pagination />}
+            />
+            {/* ///////////////layout */}
           </Routes>
           <Routes>
             <Route path="/global" element={<Global />} />

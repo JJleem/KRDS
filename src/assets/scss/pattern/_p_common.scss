@@ -676,8 +676,7 @@
       bottom: 0;
       z-index: 5;
       gap: var(--#{$prefix}spacer-4);
-      padding: var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-4)
-        var(--#{$prefix}spacer-10);
+      padding: var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-4) var(--#{$prefix}spacer-10);
       border-top: 0.1rem solid var(--krds-gray-40);
       background-color: var(--krds-white);
       .btn {
@@ -780,8 +779,8 @@
           font-size: var(--krds-fz-body-md);
           height: auto;
           min-height: 4.8rem;
-          padding: var(--#{$prefix}spacer-2) var(--#{$prefix}spacer-4)
-            var(--#{$prefix}spacer-2) var(--#{$prefix}spacer-7);
+          padding: var(--#{$prefix}spacer-2) var(--#{$prefix}spacer-4) var(--#{$prefix}spacer-2)
+            var(--#{$prefix}spacer-7);
           &::before {
             display: inline-flex;
             flex-shrink: 0;
@@ -1023,6 +1022,55 @@
       .popup-close {
         width: 2.4rem;
         height: 2.4rem;
+      }
+    }
+  }
+}
+/* ** 도움말 박스 ** */
+.g-description-area {
+  .g-conts-area {
+    .helper-box {
+      width: 100%;
+      padding: var(--#{$prefix}spacer-6);
+      background-color: var(--#{$prefix}secondary-5);
+      border: 1px solid var(--#{$prefix}gray-20);
+      border-radius: 0.6rem;
+      .helper-tit {
+        display: flex;
+        position: relative;
+        color: var(--#{$prefix}secondary);
+        font-weight: map-get($fws, bold);
+        &::before {
+          margin-right: var(--#{$prefix}spacer-1);
+          @include pseudo();
+          width: 2rem;
+          height: 2rem;
+          margin-top: var(--#{$prefix}spacer-default2);
+        }
+      }
+      .info-list {
+        > li {
+          & + li {
+            margin-top: var(--#{$prefix}spacer-2);
+          }
+        }
+      }
+      .helper-desc-wrap {
+        margin-top: var(--#{$prefix}spacer-5);
+        margin-left: var(--#{$prefix}spacer-6);
+        .info-list:first-child {
+          margin-top: 0;
+        }
+      }
+      &.refer {
+        padding: var(--#{$prefix}spacer-4);
+        background-color: var(--#{$prefix}gray-5);
+        .helper-tit {
+          color: var(--#{$prefix}gray-90);
+        }
+        .helper-desc-wrap {
+          margin-top: var(--#{$prefix}spacer-4);
+        }
       }
     }
   }
