@@ -345,6 +345,9 @@
       border-radius: 2rem;
       background-color: var(--#{$prefix}primary);
     }
+    &::after {
+      background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_filter_20.svg");
+    }
   }
 
   &.sm {

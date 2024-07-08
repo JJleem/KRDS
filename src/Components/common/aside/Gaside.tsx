@@ -402,65 +402,148 @@ const Gaside = () => {
                     </li>
                   </ul>
                 </li>
-                <li>
-                  <Link to="/">레이아웃 및 표현</Link>
+                <li
+                  className={
+                    location.pathname.startsWith("/component/layout")
+                      ? "active"
+                      : ""
+                  }
+                >
+                  <Link to="/component/layout">레이아웃 및 표현</Link>
                   <ul className="depth3">
-                    <li>
-                      <Link to="/">
+                    <li
+                      className={
+                        location.pathname === "/component/layout/structuredlist"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/layout/structuredlist">
                         구조화 목록
                         <span className="sub">(Structured list)</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/">
+                    <li
+                      className={
+                        location.pathname === "/component/layout/criticalalerts"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/layout/criticalalerts">
                         긴급 공지
                         <span className="sub">(Critical alerts)</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/">
+                    <li
+                      className={
+                        location.pathname === "/component/layout/calendar"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/layout/calendar">
                         달력<span className="sub">(Calendar)</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/">
+                    <li
+                      className={
+                        location.pathname === "/component/layout/disclosure"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/layout/disclosure">
                         디스클로저
                         <span className="sub">(Disclosure)</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/">
+                    <li
+                      className={
+                        location.pathname === "/component/layout/modal"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/layout/modal">
                         모달
                         <span className="sub">(Modal)</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/">
+                    <li
+                      className={
+                        location.pathname === "/component/layout/badge"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/layout/badge">
                         배지<span className="sub">(Badge)</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/">
+                    <li
+                      className={
+                        location.pathname === "/component/layout/accordion"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/layout/accordion">
                         아코디언<span className="sub">(Accordion)</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/">
+                    <li
+                      className={
+                        location.pathname === "/component/layout/image"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/layout/image">
                         이미지<span className="sub">(Image)</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/">
+                    <li
+                      className={
+                        location.pathname === "/component/layout/carousel"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/layout/carousel">
                         캐러셀<span className="sub">(Carousel)</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/">
+                    <li
+                      className={
+                        location.pathname === "/component/layout/tab"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/layout/tab">
                         탭<span className="sub">(Tab)</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/">
+                    <li
+                      className={
+                        location.pathname === "/component/layout/table"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/layout/table">
                         표<span className="sub">(Table)</span>
                       </Link>
                     </li>

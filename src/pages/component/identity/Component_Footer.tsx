@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Gaside from "../../../Components/common/aside/Gaside";
-import Gcontent_Footer from "../../../Components/component/identity/Gcontent_Footer";
+import Gcontent_Footer from "../../../Components/component/identity/footer/Gcontent_Footer";
 const Component_Footer = () => {
   return (
     <div id="g-container">

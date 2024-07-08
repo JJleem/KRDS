@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Gaside from "../../../Components/common/aside/Gaside";
-import Gcontent_Pagination from "../../../Components/component/search/Gcontent_Pagination";
+import Gcontent_Pagination from "../../../Components/component/search/pagination/Gcontent_Pagination";
 const Component_Pagination = () => {
   return (
     <div id="g-container">

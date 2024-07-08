@@ -29,13 +29,6 @@ import StyleGuide_Color from "./pages/styleguide/StyleGuide_Color";
 import StyleGuide_Typography from "./pages/styleguide/StyleGuide_Typography";
 //Component
 import Component from "./pages/component/identity/Component";
-//Global
-import Global from "./pages/global/Global";
-//Service
-import Service from "./pages/service/Service";
-import StyleGuide_Shape from "./pages/styleguide/StyleGuide_Shape";
-import StyleGuide_Layout from "./pages/styleguide/StyleGuide_Layout";
-import StyleGuide_SystemIcon from "./pages/styleguide/StyleGuide_SystemIcon";
 import Component_Footer from "./pages/component/identity/Component_Footer";
 import Component_Identifier from "./pages/component/identity/Component_Identifier";
 import Component_Header from "./pages/component/identity/Component_Header";
@@ -45,6 +38,24 @@ import Component_Breadcrumb from "./pages/component/search/Component_Breadcrumb"
 import Component_SideNavigation from "./pages/component/search/Component_SideNavigation";
 import Component_InPageNavigation from "./pages/component/search/Component_InPageNavigation";
 import Component_Pagination from "./pages/component/search/Component_Pagination";
+//Global
+import Global from "./pages/global/Global";
+//Service
+import Service from "./pages/service/Service";
+import StyleGuide_Shape from "./pages/styleguide/StyleGuide_Shape";
+import StyleGuide_Layout from "./pages/styleguide/StyleGuide_Layout";
+import StyleGuide_SystemIcon from "./pages/styleguide/StyleGuide_SystemIcon";
+import Component_StructuredList from "./pages/component/layout/Component_StructuredList";
+import Component_CriticalAlerts from "./pages/component/layout/Component_CriticalAlerts";
+import Component_Calendar from "./pages/component/layout/Component_Calendar";
+import Component_Disclosure from "./pages/component/layout/Component_Disclosure";
+import Component_Modal from "./pages/component/layout/Component_Modal";
+import Component_Badge from "./pages/component/layout/Component_Badge";
+import Component_Accordion from "./pages/component/layout/Component_Accordion";
+import Component_Image from "./pages/component/layout/Component_Image";
+import Component_Carousel from "./pages/component/layout/Component_Carousel";
+import Component_Tab from "./pages/component/layout/Component_Tab";
+import Component_Table from "./pages/component/layout/Component_Table";
 
 function App() {
   return (
@@ -143,6 +154,48 @@ function App() {
               element={<Component_Pagination />}
             />
             {/* ///////////////layout */}
+            <Route
+              path="/component/layout/structuredlist"
+              element={<Component_StructuredList />}
+            />
+            <Route
+              path="/component/layout/criticalalerts"
+              element={<Component_CriticalAlerts />}
+            />
+            <Route
+              path="/component/layout/calendar"
+              element={<Component_Calendar />}
+            />
+            <Route
+              path="/component/layout/disclosure"
+              element={<Component_Disclosure />}
+            />
+            <Route
+              path="/component/layout/modal"
+              element={<Component_Modal />}
+            />
+            <Route
+              path="/component/layout/badge"
+              element={<Component_Badge />}
+            />
+            <Route
+              path="/component/layout/accordion"
+              element={<Component_Accordion />}
+            />
+            <Route
+              path="/component/layout/image"
+              element={<Component_Image />}
+            />
+            <Route
+              path="/component/layout/carousel"
+              element={<Component_Carousel />}
+            />
+            <Route path="/component/layout/tab" element={<Component_Tab />} />
+            <Route
+              path="/component/layout/table"
+              element={<Component_Table />}
+            />
+            
           </Routes>
           <Routes>
             <Route path="/global" element={<Global />} />

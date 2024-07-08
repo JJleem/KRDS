@@ -432,8 +432,8 @@ const Gcontent_Breadcrumb = () => {
                       코드 확인하기
                     </button>
                   </h2>
+                  <Code />
                 </div>
-                <Code />
               </div>
             </div>
           </div>

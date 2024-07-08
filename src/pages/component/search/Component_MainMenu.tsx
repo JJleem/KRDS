@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Gaside from "../../../Components/common/aside/Gaside";
-import Gcontent_MainMenu from "../../../Components/component/search/Gcontent_MainMenu";
+import Gcontent_MainMenu from "../../../Components/component/search/mainmenu/Gcontent_MainMenu";
 
 const Component_MainMenu = () => {
   return (

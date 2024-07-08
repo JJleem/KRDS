@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Gaside from "../../../Components/common/aside/Gaside";
-import Gcontent_SkipLink from "../../../Components/component/search/Gcontent_SkipLink";
+import Gcontent_SkipLink from "../../../Components/component/search/skiplink/Gcontent_SkipLink";
 const Component_SkipLink = () => {
   return (
     <div id="g-container">

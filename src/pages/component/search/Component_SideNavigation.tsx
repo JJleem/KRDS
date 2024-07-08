@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Gaside from "../../../Components/common/aside/Gaside";
-import Gcontent_SideNavigation from "../../../Components/component/search/Gcontent_SideNavigation";
+import Gcontent_SideNavigation from "../../../Components/component/search/sidenavigation/Gcontent_SideNavigation";
 const Component_SideNavigation = () => {
   return (
     <div id="g-container">

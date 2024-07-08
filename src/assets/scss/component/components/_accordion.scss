@@ -18,7 +18,8 @@
       @include pseudo();
       width: 2.4rem;
       height: 2.4rem;
- 
+      background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_arr_accordion.svg")
+        no-repeat center;
       background-size: 2rem;
       transition: $transition-base;
       transform: rotate(0deg);

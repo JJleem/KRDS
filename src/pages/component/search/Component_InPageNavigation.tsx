@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Gaside from "../../../Components/common/aside/Gaside";
-import Gcontent_InPageNavigation from "../../../Components/component/search/Gcontent_InPageNavigation";
+import Gcontent_InPageNavigation from "../../../Components/component/search/inpagenavigation/Gcontent_InPageNavigation";
 const Component_InPageNavigation = () => {
   return (
     <div id="g-container">
