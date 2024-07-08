@@ -56,6 +56,22 @@ import Component_Image from "./pages/component/layout/Component_Image";
 import Component_Carousel from "./pages/component/layout/Component_Carousel";
 import Component_Tab from "./pages/component/layout/Component_Tab";
 import Component_Table from "./pages/component/layout/Component_Table";
+import Component_Link from "./pages/component/action/Component_Link";
+import Component_Button from "./pages/component/action/Component_Button";
+import Component_RadioButton from "./pages/component/select/Component_RadioButton";
+import Component_CheckBox from "./pages/component/select/Component_CheckBox";
+import Component_Select from "./pages/component/select/Component_Select";
+import Component_Tag from "./pages/component/select/Component_Tag";
+import Component_StepIndicator from "./pages/component/feedback/Component_StepIndicator";
+import Component_Spinner from "./pages/component/feedback/Component_Spinner";
+import Component_HelpPanel from "./pages/component/help/Component_HelpPanel";
+import Component_TutorialPanel from "./pages/component/help/Component_TutorialPanel";
+import Component_ContextualHelp from "./pages/component/help/Component_ContextualHelp";
+import Component_CoachMark from "./pages/component/help/Component_CoachMark";
+import Component_DateInput from "./pages/component/input/Component_DateInput";
+import Component_Textarea from "./pages/component/input/Component_Textarea";
+import Component_TextInput from "./pages/component/input/Component_TextInput";
+import Component_FileUpload from "./pages/component/input/Component_FileUpload";
 
 function App() {
   return (
@@ -195,7 +211,69 @@ function App() {
               path="/component/layout/table"
               element={<Component_Table />}
             />
-            
+            {/* ///////////////action */}
+            <Route path="/component/action/link" element={<Component_Link />} />
+            <Route
+              path="/component/action/button"
+              element={<Component_Button />}
+            />
+            {/* ///////////////select */}
+            <Route
+              path="/component/select/radiobutton"
+              element={<Component_RadioButton />}
+            />
+            <Route
+              path="/component/select/checkbox"
+              element={<Component_CheckBox />}
+            />
+            <Route
+              path="/component/select/select"
+              element={<Component_Select />}
+            />
+            <Route path="/component/select/tag" element={<Component_Tag />} />
+            {/* ///////////////feedback */}
+            <Route
+              path="/component/feedback/stepindicator"
+              element={<Component_StepIndicator />}
+            />
+            <Route
+              path="/component/feedback/spinner"
+              element={<Component_Spinner />}
+            />
+            {/* ///////////////help */}
+            <Route
+              path="/component/help/helppanel"
+              element={<Component_HelpPanel />}
+            />
+            <Route
+              path="/component/help/tutorialpanel"
+              element={<Component_TutorialPanel />}
+            />
+            <Route
+              path="/component/help/contextualhelp"
+              element={<Component_ContextualHelp />}
+            />
+            <Route
+              path="/component/help/coachmark"
+              element={<Component_CoachMark />}
+            />
+            {/* ///////////////input */}
+            <Route
+              path="/component/input/dateinput"
+              element={<Component_DateInput />}
+            />
+            <Route
+              path="/component/input/textarea"
+              element={<Component_Textarea />}
+            />
+            <Route
+              path="/component/input/textinput"
+              element={<Component_TextInput />}
+            />
+            <Route
+              path="/component/input/fileupload"
+              element={<Component_FileUpload />}
+            />
           </Routes>
           <Routes>
             <Route path="/global" element={<Global />} />

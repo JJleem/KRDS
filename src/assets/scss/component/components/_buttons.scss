@@ -254,10 +254,16 @@
     &::before {
       background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_share_20.svg");
     }
+    &::after {
+      background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_share_20.svg") !important;
+    }
   }
   &.ico-like {
     &::before {
       background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_like_20.svg");
+    }
+    &::after {
+      background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_like_20.svg") !important;
     }
   }
   &.iico-more {
@@ -440,6 +446,41 @@
     &[class*="ico-"] {
       width: 2.4rem;
       height: 2.4rem;
+    }
+  }
+}
+.btn-ico {
+  &.ico-pw-visible {
+    background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_pw_visible.svg");
+  }
+}
+
+.ico-func {
+  &::before {
+    background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_arr_func_20.svg");
+  }
+}
+.btn-txt {
+  &.ico-arr {
+    &::after {
+      background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_arr_20_right.svg") !important;
+    }
+  }
+  &.ico-more {
+    &::after {
+      background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_arr_20_right.svg") !important;
+    }
+  }
+  &.ico-down {
+    &::after {
+      background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_file_20.svg") !important;
+    }
+  }
+}
+.btn {
+  &.ico-sch {
+    &::after {
+      background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_sch_40.svg") !important;
     }
   }
 }

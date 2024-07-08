@@ -272,7 +272,7 @@ const Gaside = () => {
                       onClick={TogglehandleClick}
                     >
                       <Link to="/component/identity">
-                        공식 배너<span className="sub"></span>(Masthead)
+                        공식 배너<span className="sub">(Masthead)</span>
                       </Link>
                     </li>
                     <li
@@ -545,6 +545,270 @@ const Gaside = () => {
                     >
                       <Link to="/component/layout/table">
                         표<span className="sub">(Table)</span>
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  className={
+                    location.pathname.startsWith("/component/action")
+                      ? "active"
+                      : ""
+                  }
+                >
+                  <Link to="/component/action/link">액션</Link>
+                  <ul className="depth3">
+                    <li
+                      className={
+                        location.pathname === "/component/action/link"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/action/link">
+                        링크
+                        <span className="sub">(Link)</span>
+                      </Link>
+                    </li>
+                    <li
+                      className={
+                        location.pathname === "/component/action/button"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/action/button">
+                        버튼
+                        <span className="sub">(Button)</span>
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  className={
+                    location.pathname.startsWith("/component/select/")
+                      ? "active"
+                      : ""
+                  }
+                >
+                  <Link to="/component/select/radiobutton">선택</Link>
+                  <ul className="depth3">
+                    <li
+                      className={
+                        location.pathname === "/component/select/radiobutton"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/select/radiobutton">
+                        라디오 버튼
+                        <span className="sub">(Radio button)</span>
+                      </Link>
+                    </li>
+                    <li
+                      className={
+                        location.pathname === "/component/select/checkbox"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/select/checkbox">
+                        체크박스
+                        <span className="sub">(Checkbox)</span>
+                      </Link>
+                    </li>
+                    <li
+                      className={
+                        location.pathname === "/component/select/select"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/select/select">
+                        셀렉트
+                        <span className="sub">(Select)</span>
+                      </Link>
+                    </li>
+                    <li
+                      className={
+                        location.pathname === "/component/select/tag"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/select/tag">
+                        태그
+                        <span className="sub">(Tag)</span>
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  className={
+                    location.pathname.startsWith("/component/feedback")
+                      ? "active"
+                      : ""
+                  }
+                >
+                  <Link to="/component/feedback/stepindicator">피드백</Link>
+                  <ul className="depth3">
+                    <li
+                      className={
+                        location.pathname ===
+                        "/component/feedback/stepindicator"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/feedback/stepindicator">
+                        단계 표시기
+                        <span className="sub">(Step indicator)</span>
+                      </Link>
+                    </li>
+                    <li
+                      className={
+                        location.pathname === "/component/feedback/spinner"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/feedback/spinner">
+                        스피너
+                        <span className="sub">(Spinner)</span>
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  className={
+                    location.pathname.startsWith("/component/help")
+                      ? "active"
+                      : ""
+                  }
+                >
+                  <Link to="/component/help/helppanel">도움</Link>
+                  <ul className="depth3">
+                    <li
+                      className={
+                        location.pathname === "/component/help/helppanel"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/help/helppanel">
+                        도움 패널
+                        <span className="sub">(Help panel)</span>
+                      </Link>
+                    </li>
+                    <li
+                      className={
+                        location.pathname === "/component/help/tutorialpanel"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/help/tutorialpanel">
+                        따라하기 패널
+                        <span className="sub">(Tutorial panel)</span>
+                      </Link>
+                    </li>
+                    <li
+                      className={
+                        location.pathname === "/component/help/contextualhelp"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/help/contextualhelp">
+                        맥락적 도움말
+                        <span className="sub">(Contextual help)</span>
+                      </Link>
+                    </li>
+                    <li
+                      className={
+                        location.pathname === "/component/help/coachmark"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/help/coachmark">
+                        코치마크
+                        <span className="sub">(Coach mark)</span>
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  className={
+                    location.pathname.startsWith("/component/input")
+                      ? "active"
+                      : ""
+                  }
+                >
+                  <Link to="/component/input/dateinput">입력</Link>
+                  <ul className="depth3">
+                    <li
+                      className={
+                        location.pathname === "/component/input/dateinput"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/input/dateinput">
+                        날짜 입력 필드
+                        <span className="sub">(Date input)</span>
+                      </Link>
+                    </li>
+                    <li
+                      className={
+                        location.pathname === "/component/input/textarea"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/input/textarea">
+                        텍스트 영역
+                        <span className="sub">(Textarea)</span>
+                      </Link>
+                    </li>
+                    <li
+                      className={
+                        location.pathname === "/component/input/textinput"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/input/textinput">
+                        텍스트 입력 필드
+                        <span className="sub">(Text input)</span>
+                      </Link>
+                    </li>
+                    <li
+                      className={
+                        location.pathname === "/component/input/fileupload"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/component/input/fileupload">
+                        파일 업로드
+                        <span className="sub">(File upload)</span>
                       </Link>
                     </li>
                   </ul>

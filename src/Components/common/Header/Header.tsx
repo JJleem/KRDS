@@ -49,7 +49,7 @@ const Header = () => {
             </li>
             <li
               className={
-                location.pathname.startsWith("/component/identity")
+                location.pathname.startsWith("/component")
                   ? "active"
                   : undefined
               }
