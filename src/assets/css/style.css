@@ -2320,6 +2320,12 @@ caption {
 .btn-txt[disabled] {
   color: var(--krds-gray-50);
 }
+.btn-txt.ico-share::before {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_share_20.svg");
+}
+.btn-txt.ico-like::before {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_like_20.svg");
+}
 .btn-txt.iico-more::after {
   background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_arr1_20_right.svg") !important;
 }
@@ -8943,6 +8949,34 @@ input[type=checkbox] {
   justify-content: flex-start;
 }
 
+@media (min-width: 600px) and (max-width: 1023px) {
+  .login-form-area {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 599px) {
+  .login-form-area {
+    flex-direction: column;
+    padding: var(--krds-spacer-8) 0;
+  }
+}
+@media (max-width: 1023px) {
+  .login-form-area.type-tab .login-wrap {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .login-form-area.type-tab .login-info-wrap {
+    position: relative;
+    width: 100%;
+    margin-top: var(--krds-spacer-8);
+    padding: var(--krds-spacer-8) 0 0;
+    border-top: 0.1rem solid var(--krds-gray-30);
+  }
+}
 /* 로그인 방식 선택 */
 .login-opt-wrap {
   display: flex;
@@ -12385,6 +12419,54 @@ input[type=checkbox] {
     white-space: nowrap !important;
     border: 0 !important;
   }
+}
+
+@media (min-width: 600px) {
+  .search-list.type1 {
+    grid-template-columns: none !important;
+  }
+}
+.helper-box {
+  width: 100%;
+  padding: var(--krds-spacer-6);
+  background-color: var(--krds-secondary-5);
+  border: 1px solid var(--krds-gray-20);
+  border-radius: 0.6rem;
+}
+.helper-box .helper-tit {
+  display: flex;
+  position: relative;
+  color: var(--krds-secondary);
+  font-weight: 700;
+}
+.helper-box .helper-tit::before {
+  margin-right: var(--krds-spacer-1);
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  margin-top: var(--krds-spacer-default2);
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/pattern/content/ico_helper_info.svg");
+  background-size: contain;
+}
+.helper-box .info-list > li + li {
+  margin-top: var(--krds-spacer-2);
+}
+.helper-box .helper-desc-wrap {
+  margin-top: var(--krds-spacer-5);
+  margin-left: var(--krds-spacer-6);
+}
+.helper-box .helper-desc-wrap .info-list:first-child {
+  margin-top: 0;
+}
+.helper-box.refer {
+  padding: var(--krds-spacer-4);
+  background-color: var(--krds-gray-5);
+}
+.helper-box.refer .helper-tit {
+  color: var(--krds-gray-90);
+}
+.helper-box.refer .helper-desc-wrap {
+  margin-top: var(--krds-spacer-4);
 }
 
 /* 공통 */

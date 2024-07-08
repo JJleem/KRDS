@@ -1011,7 +1011,8 @@
   }
   .login-info-wrap {
     width: 45rem;
-    padding: var(--#{$prefix}spacer-6) 0 var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-10);
+    padding: var(--#{$prefix}spacer-6) 0 var(--#{$prefix}spacer-6)
+      var(--#{$prefix}spacer-10);
   }
   &.type-tab {
     padding-left: 0;
@@ -1055,7 +1056,34 @@
     }
   }
 }
-
+@media (min-width: 600px) and (max-width: 1023px) {
+  .login-form-area {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 599px) {
+  .login-form-area {
+    flex-direction: column;
+    padding: var(--krds-spacer-8) 0;
+  }
+}
+@media (max-width: 1023px) {
+  .login-form-area.type-tab .login-wrap {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .login-form-area.type-tab .login-info-wrap {
+    position: relative;
+    width: 100%;
+    margin-top: var(--krds-spacer-8);
+    padding: var(--krds-spacer-8) 0 0;
+    border-top: 0.1rem solid var(--krds-gray-30);
+  }
+}
 /* 로그인 방식 선택 */
 //로그인 옵션
 .login-opt-wrap {
@@ -1101,7 +1129,8 @@
       @include flex-layout($jc: flex-start);
       flex-direction: column;
       position: relative;
-      padding: var(--#{$prefix}spacer-8) var(--#{$prefix}spacer-8) var(--#{$prefix}spacer-8) var(--#{$prefix}spacer-22);
+      padding: var(--#{$prefix}spacer-8) var(--#{$prefix}spacer-8)
+        var(--#{$prefix}spacer-8) var(--#{$prefix}spacer-22);
       background-color: var(--#{$prefix}gray-5);
       border: 1px solid var(--#{$prefix}gray-20);
       border-radius: var(--#{$prefix}rd-12);
@@ -2163,7 +2192,11 @@
       @include pseudo();
       width: 100%;
       height: 6.2rem;
-      background: linear-gradient(180deg, transparent 0%, var(--#{$prefix}white) 100%);
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        var(--#{$prefix}white) 100%
+      );
       @include visibility($v: visible);
       z-index: 10;
       transition: $transition-base;
@@ -2223,7 +2256,11 @@
     .expand-wrap {
       max-height: 20rem;
       &::after {
-        background: linear-gradient(180deg, transparent 0%, var(--#{$prefix}gray-5) 100%);
+        background: linear-gradient(
+          180deg,
+          transparent 0%,
+          var(--#{$prefix}gray-5) 100%
+        );
       }
     }
     .btn-conts-expand {
@@ -3043,7 +3080,8 @@
         display: flex;
         flex-wrap: nowrap;
         gap: var(--#{$prefix}spacer-2);
-        padding: var(--#{$prefix}spacer-1) var(--#{$prefix}spacer-10) var(--#{$prefix}spacer-1) 0;
+        padding: var(--#{$prefix}spacer-1) var(--#{$prefix}spacer-10)
+          var(--#{$prefix}spacer-1) 0;
         overflow: hidden;
         overflow-x: auto;
         &::-webkit-scrollbar {
@@ -3071,8 +3109,13 @@
         top: 0;
         right: 0;
         z-index: 2;
-        padding: var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-4) var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-8);
-        background: linear-gradient(90deg, rgba(237, 241, 245, 0.3) 3.12%, #edf1f5 46.25%);
+        padding: var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-4)
+          var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-8);
+        background: linear-gradient(
+          90deg,
+          rgba(237, 241, 245, 0.3) 3.12%,
+          #edf1f5 46.25%
+        );
       }
       .btn-ico {
         &.active {
@@ -3162,7 +3205,8 @@
         .li {
           flex-direction: row;
           align-items: flex-start;
-          padding: var(--#{$prefix}spacer-8) var(--#{$prefix}spacer-10) var(--#{$prefix}spacer-10);
+          padding: var(--#{$prefix}spacer-8) var(--#{$prefix}spacer-10)
+            var(--#{$prefix}spacer-10);
         }
         .card-body {
           flex-direction: row;
@@ -4346,7 +4390,8 @@
         @include flex-layout($fd: column);
         gap: var(--#{$prefix}spacer-6);
         > li {
-          padding: var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-4) var(--#{$prefix}spacer-4);
+          padding: var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-4)
+            var(--#{$prefix}spacer-4);
         }
         $box-pl: 3.6rem;
         input[type="radio"],
@@ -4590,6 +4635,57 @@
           }
         }
       }
+    }
+  }
+}
+@media (min-width: 600px) {
+  .search-list.type1 {
+    grid-template-columns: none !important;
+  }
+}
+.helper-box {
+  width: 100%;
+  padding: var(--#{$prefix}spacer-6);
+  background-color: var(--#{$prefix}secondary-5);
+  border: 1px solid var(--#{$prefix}gray-20);
+  border-radius: 0.6rem;
+  .helper-tit {
+    display: flex;
+    position: relative;
+    color: var(--#{$prefix}secondary);
+    font-weight: map-get($fws, bold);
+    &::before {
+      margin-right: var(--#{$prefix}spacer-1);
+      @include pseudo();
+      width: 2rem;
+      height: 2rem;
+      margin-top: var(--#{$prefix}spacer-default2);
+      background-image: url("https://uiux.egovframe.go.kr/resources/img/pattern/content/ico_helper_info.svg");
+      background-size: contain;
+    }
+  }
+  .info-list {
+    > li {
+      & + li {
+        margin-top: var(--#{$prefix}spacer-2);
+      }
+    }
+  }
+  .helper-desc-wrap {
+    margin-top: var(--#{$prefix}spacer-5);
+    margin-left: var(--#{$prefix}spacer-6);
+    .info-list:first-child {
+      margin-top: 0;
+    }
+  }
+  &.refer {
+    padding: var(--#{$prefix}spacer-4);
+    background-color: var(--#{$prefix}gray-5);
+    .helper-tit {
+      color: var(--#{$prefix}gray-90);
+    }
+    .helper-desc-wrap {
+      margin-top: var(--#{$prefix}spacer-4);
     }
   }
 }

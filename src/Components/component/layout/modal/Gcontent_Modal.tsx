@@ -6,6 +6,7 @@ import CodeTwo from "./code/CodeTwo";
 import CodeThree from "./code/CodeThree";
 import Fade from "./modalItem/Fade";
 import { useState } from "react";
+import TopBtn from "../../../common/topbtn/TopBtn";
 const Gcontent_Modal = () => {
   const [isClicked, setIsClicked] = useState(false);
   const handleClick = () => {
@@ -435,11 +436,12 @@ const Gcontent_Modal = () => {
                 <Basic />
               </div>
               <div className="g-code-wrap accordion">
-                <div className="accordion-item">
+                <div className={`accordion-item ${isClicked ? "active" : ""}`}>
                   <h2 id="accordionHeader04_05_01" className="accordion-header">
                     <button
                       type="button"
-                      className="btn-accordion"
+                      className={`btn-accordion ${isClicked ? "active" : ""}`}
+                      onClick={handleClick}
                       aria-controls="accordionCollapse04_05_01"
                     >
                       코드 확인하기
@@ -458,11 +460,16 @@ const Gcontent_Modal = () => {
                 <Earlut />
               </div>
               <div className="g-code-wrap accordion">
-                <div className="accordion-item">
+                <div
+                  className={`accordion-item ${isClickedTwo ? "active" : ""}`}
+                >
                   <h2 id="accordionHeader04_05_02" className="accordion-header">
                     <button
                       type="button"
-                      className="btn-accordion"
+                      className={`btn-accordion ${
+                        isClickedTwo ? "active" : ""
+                      }`}
+                      onClick={handleClickTwo}
                       aria-controls="accordionCollapse04_05_02"
                     >
                       코드 확인하기
@@ -477,14 +484,18 @@ const Gcontent_Modal = () => {
           <div className="g-conts-area">
             <h4 className="g-heading-s">class 및 data-target 호출</h4>
             <div className="g-example-wrap">
-             
-                <Fade />
+              <Fade />
               <div className="g-code-wrap accordion">
-                <div className="accordion-item">
+                <div
+                  className={`accordion-item ${isClickedThree ? "active" : ""}`}
+                >
                   <h2 id="accordionHeader04_05_03" className="accordion-header">
                     <button
                       type="button"
-                      className="btn-accordion"
+                      className={`btn-accordion ${
+                        isClickedThree ? "active" : ""
+                      }`}
+                      onClick={handleClickThree}
                       aria-controls="accordionCollapse04_05_03"
                     >
                       코드 확인하기
@@ -498,9 +509,7 @@ const Gcontent_Modal = () => {
         </div>
       </div>
 
-      <button className="btn tertiary sm go-top" type="button">
-        TOP
-      </button>
+      <TopBtn />
     </div>
   );
 };

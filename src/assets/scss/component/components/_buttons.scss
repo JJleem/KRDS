@@ -250,6 +250,16 @@
   &[disabled] {
     color: var(--#{$prefix}gray-50);
   }
+  &.ico-share {
+    &::before {
+      background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_share_20.svg");
+    }
+  }
+  &.ico-like {
+    &::before {
+      background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_like_20.svg");
+    }
+  }
   &.iico-more {
     &::after {
       background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_arr1_20_right.svg") !important;
