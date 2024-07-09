@@ -83,6 +83,34 @@ import Global11 from "./pages/global/Global11";
 //Service
 import Visit01 from "./pages/service/visit/Visit01";
 import Visit02 from "./pages/service/visit/Visit02";
+import Search01 from "./pages/service/search/Search01";
+import Search02 from "./pages/service/search/Search02";
+import Search03 from "./pages/service/search/Search03";
+import Search04 from "./pages/service/search/Search04";
+import Search05 from "./pages/service/search/Search05";
+import Search06 from "./pages/service/search/Search06";
+import Search07 from "./pages/service/search/Search07";
+import Search08 from "./pages/service/search/Search08";
+import Login01 from "./pages/service/login/Login01";
+import Login02 from "./pages/service/login/Login02";
+import Login03 from "./pages/service/login/Login03";
+import Login04 from "./pages/service/login/Login04";
+import Login05 from "./pages/service/login/Login05";
+import Login06 from "./pages/service/login/Login06";
+import Login07 from "./pages/service/login/Login07";
+import Login08 from "./pages/service/login/Login08";
+import Request01 from "./pages/service/request/Request01";
+import Request02 from "./pages/service/request/Request02";
+import Request03 from "./pages/service/request/Request03";
+import Request04 from "./pages/service/request/Request04";
+import Request05 from "./pages/service/request/Request05";
+import Request06 from "./pages/service/request/Request06";
+import Request07 from "./pages/service/request/Request07";
+import Request08 from "./pages/service/request/Request08";
+import Policy01 from "./pages/service/policy/Policy01";
+import Policy02 from "./pages/service/policy/Policy02";
+import Policy03 from "./pages/service/policy/Policy03";
+import Policy04 from "./pages/service/policy/Policy04";
 
 function App() {
   return (
@@ -301,9 +329,41 @@ function App() {
           </Routes>
           {/* ///////////////global */}
           <Routes>
-                    {/* ///////////////visit */}
+            {/* ///////////////visit */}
             <Route path="/service/visit_01" element={<Visit01 />} />
             <Route path="/service/visit_02" element={<Visit02 />} />
+            {/* ///////////////search */}
+            <Route path="/service/search_01" element={<Search01 />} />
+            <Route path="/service/search_02" element={<Search02 />} />
+            <Route path="/service/search_03" element={<Search03 />} />
+            <Route path="/service/search_04" element={<Search04 />} />
+            <Route path="/service/search_05" element={<Search05 />} />
+            <Route path="/service/search_06" element={<Search06 />} />
+            <Route path="/service/search_07" element={<Search07 />} />
+            <Route path="/service/search_08" element={<Search08 />} />
+            {/* ///////////////login */}
+            <Route path="/service/login_01" element={<Login01 />} />
+            <Route path="/service/login_02" element={<Login02 />} />
+            <Route path="/service/login_03" element={<Login03 />} />
+            <Route path="/service/login_04" element={<Login04 />} />
+            <Route path="/service/login_05" element={<Login05 />} />
+            <Route path="/service/login_06" element={<Login06 />} />
+            <Route path="/service/login_07" element={<Login07 />} />
+            <Route path="/service/login_08" element={<Login08 />} />
+            {/* ///////////////request */}
+            <Route path="/service/request_01" element={<Request01 />} />
+            <Route path="/service/request_02" element={<Request02 />} />
+            <Route path="/service/request_03" element={<Request03 />} />
+            <Route path="/service/request_04" element={<Request04 />} />
+            <Route path="/service/request_05" element={<Request05 />} />
+            <Route path="/service/request_06" element={<Request06 />} />
+            <Route path="/service/request_07" element={<Request07 />} />
+            <Route path="/service/request_08" element={<Request08 />} />
+            {/* ///////////////policy */}
+            <Route path="/service/policy_01" element={<Policy01 />} />
+            <Route path="/service/policy_02" element={<Policy02 />} />
+            <Route path="/service/policy_03" element={<Policy03 />} />
+            <Route path="/service/policy_04" element={<Policy04 />} />
           </Routes>
           <Footer />
         </Wrap>

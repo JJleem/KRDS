@@ -499,3 +499,13 @@
     background-size: contain;
   }
 }
+.btn-txt {
+  &.ico-sch1 {
+    &::before {
+      background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_sch1_20.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+}

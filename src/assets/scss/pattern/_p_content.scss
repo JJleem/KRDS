@@ -1011,7 +1011,8 @@
   }
   .login-info-wrap {
     width: 45rem;
-    padding: var(--#{$prefix}spacer-6) 0 var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-10);
+    padding: var(--#{$prefix}spacer-6) 0 var(--#{$prefix}spacer-6)
+      var(--#{$prefix}spacer-10);
   }
   &.type-tab {
     padding-left: 0;
@@ -1128,7 +1129,8 @@
       @include flex-layout($jc: flex-start);
       flex-direction: column;
       position: relative;
-      padding: var(--#{$prefix}spacer-8) var(--#{$prefix}spacer-8) var(--#{$prefix}spacer-8) var(--#{$prefix}spacer-22);
+      padding: var(--#{$prefix}spacer-8) var(--#{$prefix}spacer-8)
+        var(--#{$prefix}spacer-8) var(--#{$prefix}spacer-22);
       background-color: var(--#{$prefix}gray-5);
       border: 1px solid var(--#{$prefix}gray-20);
       border-radius: var(--#{$prefix}rd-12);
@@ -2190,7 +2192,11 @@
       @include pseudo();
       width: 100%;
       height: 6.2rem;
-      background: linear-gradient(180deg, transparent 0%, var(--#{$prefix}white) 100%);
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        var(--#{$prefix}white) 100%
+      );
       @include visibility($v: visible);
       z-index: 10;
       transition: $transition-base;
@@ -2250,7 +2256,11 @@
     .expand-wrap {
       max-height: 20rem;
       &::after {
-        background: linear-gradient(180deg, transparent 0%, var(--#{$prefix}gray-5) 100%);
+        background: linear-gradient(
+          180deg,
+          transparent 0%,
+          var(--#{$prefix}gray-5) 100%
+        );
       }
     }
     .btn-conts-expand {
@@ -2653,9 +2663,12 @@
             content: "";
             width: 2rem;
             height: 2rem;
+            background: url("https://uiux.egovframe.go.kr/resources/img/pattern/content/ico_smile_20.svg")
+              no-repeat center;
           }
           &:not(:checked) {
             ~ .form-chip-outline {
+              background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
               &::before {
                 display: none;
               }
@@ -3070,7 +3083,8 @@
         display: flex;
         flex-wrap: nowrap;
         gap: var(--#{$prefix}spacer-2);
-        padding: var(--#{$prefix}spacer-1) var(--#{$prefix}spacer-10) var(--#{$prefix}spacer-1) 0;
+        padding: var(--#{$prefix}spacer-1) var(--#{$prefix}spacer-10)
+          var(--#{$prefix}spacer-1) 0;
         overflow: hidden;
         overflow-x: auto;
         &::-webkit-scrollbar {
@@ -3098,8 +3112,13 @@
         top: 0;
         right: 0;
         z-index: 2;
-        padding: var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-4) var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-8);
-        background: linear-gradient(90deg, rgba(237, 241, 245, 0.3) 3.12%, #edf1f5 46.25%);
+        padding: var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-4)
+          var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-8);
+        background: linear-gradient(
+          90deg,
+          rgba(237, 241, 245, 0.3) 3.12%,
+          #edf1f5 46.25%
+        );
       }
       .btn-ico {
         &.active {
@@ -3189,7 +3208,8 @@
         .li {
           flex-direction: row;
           align-items: flex-start;
-          padding: var(--#{$prefix}spacer-8) var(--#{$prefix}spacer-10) var(--#{$prefix}spacer-10);
+          padding: var(--#{$prefix}spacer-8) var(--#{$prefix}spacer-10)
+            var(--#{$prefix}spacer-10);
         }
         .card-body {
           flex-direction: row;
@@ -4373,7 +4393,8 @@
         @include flex-layout($fd: column);
         gap: var(--#{$prefix}spacer-6);
         > li {
-          padding: var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-4) var(--#{$prefix}spacer-4);
+          padding: var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-4)
+            var(--#{$prefix}spacer-4);
         }
         $box-pl: 3.6rem;
         input[type="radio"],
@@ -4673,5 +4694,80 @@
 }
 .form-chip-outline::before {
   background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip.svg");
+  background-size: contain;
+}
+.agree-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 6.4rem;
+  background-color: var(--krds-gray-10);
+  border-radius: var(--krds-rd-8);
+}
+.assess-opinion-wrap {
+  display: flex;
+  align-items: normal;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: var(--krds-spacer-8);
+  padding-top: var(--krds-spacer-10);
+  margin-top: var(--krds-spacer-10);
+  border-top: 0.1rem solid var(--krds-gray-30);
+}
+.assess-opinion-wrap .assess-opinion-list {
+  display: flex;
+  align-items: normal;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: var(--krds-spacer-8);
+  counter-reset: item;
+}
+.assess-opinion-wrap .assess-opinion-list li {
+  display: flex;
+  align-items: normal;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: var(--krds-spacer-6);
+}
+.assess-opinion-wrap .assess-opinion-list li .form-qu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  counter-increment: item;
+}
+.assess-opinion-wrap .assess-opinion-list .form-group {
+  padding-left: var(--krds-spacer-4);
+}
+.assess-end-message {
+  display: flex;
+  align-items: normal;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: var(--krds-spacer-4);
+  padding: var(--krds-spacer-4);
+  margin-top: var(--krds-spacer-20);
+  border-radius: var(--krds-rd-6);
+  border: 0.1rem solid #cee9d4;
+  background-color: #eef7f0;
+}
+.assess-end-message .tit {
+  font-size: var(--krds-fz-body-lg);
+  color: #006e18;
+  font-weight: 700;
+}
+.assess-end-message .txt {
+  padding-left: var(--krds-spacer-8);
+}
+.assess-end-message .tit::before {
+  display: inline-flex;
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: var(--krds-spacer-2);
+  vertical-align: text-top;
+  background: url("https://uiux.egovframe.go.kr/resources/img/pattern/content/ico_check_rd_20.svg")
+    no-repeat center;
   background-size: contain;
 }

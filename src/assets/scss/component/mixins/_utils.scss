@@ -479,12 +479,15 @@
                 &::before {
                   width: var(--#{$prefix}chkChipOutline-ico-#{$key});
                   height: var(--#{$prefix}chkChipOutline-ico-#{$key});
-
+                  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
                   background-size: contain;
                 }
               }
               &:checked {
                 ~ .form-chip-outline {
+                  &::before {
+                    background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
+                  }
                 }
               }
               &:disabled {
@@ -507,8 +510,7 @@
                 &::before {
                   width: var(--#{$prefix}chkChipOutline-ico-#{$key});
                   height: var(--#{$prefix}chkChipOutline-ico-#{$key});
-
-                  background-size: contain;
+                  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
                 }
               }
             }
@@ -537,6 +539,9 @@
               }
               &:checked {
                 ~ .form-chip-outline {
+                  &::before {
+                    background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
+                  }
                 }
               }
               &:disabled {
@@ -559,7 +564,7 @@
                 &::before {
                   width: var(--#{$prefix}chkChipOutline-ico-#{$key});
                   height: var(--#{$prefix}chkChipOutline-ico-#{$key});
-
+                  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
                   background-size: contain;
                 }
               }
@@ -579,3 +584,15 @@
     }
   }
 }
+// .form-chip {
+//   .radio {
+//     &:checked {
+//       &.form-chip-outline {
+//         &::before {
+//           background-size: contain;
+//           background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
+//         }
+//       }
+//     }
+//   }
+// }

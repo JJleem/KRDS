@@ -359,7 +359,8 @@ input[type="checkbox"] {
         @include position($t: $pos, $l: $pos);
         width: var(--#{$prefix}chk-primary-chk-#{$size});
         height: var(--#{$prefix}chk-primary-chk-#{$size});
-
+        background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_primary_checked.svg")
+          no-repeat 0 0;
         background-size: contain;
         opacity: 0;
       }
