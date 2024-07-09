@@ -12717,6 +12717,12 @@ input[type=checkbox] {
   text-align: center;
 }
 
+@media (max-width: 599px) {
+  .search-top-box .sch-form-wrap .sch-input .form-control {
+    width: 100%;
+    max-width: 100%;
+  }
+}
 /* 공통 */
 /* 공통 */
 /* **** area mixin ****/
@@ -14155,6 +14161,10 @@ body {
     height: auto;
   }
 }
+.main .figma-area.pdf .box-group-area > li::before {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/guide/contents/main/ico_pdf.svg");
+}
+
 /* PrismJS 1.29.0
 https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript */
 code[class*=language-],

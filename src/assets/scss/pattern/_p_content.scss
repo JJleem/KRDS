@@ -4822,3 +4822,9 @@
 .agree-box .form-check {
   text-align: center;
 }
+@media (max-width: 599px) {
+  .search-top-box .sch-form-wrap .sch-input .form-control {
+    width: 100%;
+    max-width: 100%;
+  }
+}

@@ -13,11 +13,11 @@ const MainArea = () => {
               <Link
                 to={
                   db.id === 1
-                    ? "/component"
+                    ? "/component/identity"
                     : db.id === 2
-                    ? "/global"
+                    ? "/global/global_1"
                     : db.id === 3
-                    ? "/service"
+                    ? "/service/visit_01"
                     : "/styleguide"
                 }
               >

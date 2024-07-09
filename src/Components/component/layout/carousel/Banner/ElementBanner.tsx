@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+
 interface SwiperInstance {
   autoplay: {
     start: () => void;

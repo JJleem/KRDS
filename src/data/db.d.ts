@@ -29,6 +29,7 @@ declare module "./db.json" {
       sub?: string;
       badge1?: string;
       badge2?: string;
+      link?: string;
     }[];
   }
   const db: Db;

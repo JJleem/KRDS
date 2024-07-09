@@ -37,7 +37,7 @@ const SearchArea = () => {
         <ul className="search-list">
           {filteredData.map((db) => (
             <li className={db.img === "" ? "li no-img" : "li"} key={db.id}>
-              <Link to="/">
+              <Link to={`${db.link}`}>
                 {db.img === "" ? null : (
                   <div
                     className={`img-wrap guide${db.id}`}

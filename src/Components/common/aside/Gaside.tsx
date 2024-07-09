@@ -922,123 +922,362 @@ const Gaside = () => {
               </button>
               <ul className="depth2">
                 <li
-                  className={clickedIndex === 5 ? "active" : ""}
+                  className={
+                    location.pathname.startsWith("/service/visit")
+                      ? "active"
+                      : ""
+                  }
                   onClick={TogglehandleClick}
                 >
-                  <Link to="/service">방문</Link>
+                  <Link to="/service/visit_01">방문</Link>
                   <ul className="depth3">
                     <li
-                      className={clickedIndex === 5 ? "active" : ""}
+                      className={
+                        location.pathname === "/service/visit_01"
+                          ? "active"
+                          : ""
+                      }
                       onClick={TogglehandleClick}
                     >
-                      <Link to="/service">개요</Link>
+                      <Link to="/service/visit_01">개요</Link>
                     </li>
-                    <li>
-                      <Link to="/">방문</Link>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <Link to="/">검색</Link>
-                  <ul className="depth3">
-                    <li>
-                      <Link to="/">개요</Link>
-                    </li>
-                    <li>
-                      <Link to="/">검색 기능 찾기</Link>
-                    </li>
-                    <li>
-                      <Link to="/">검색어 입력</Link>
-                    </li>
-                    <li>
-                      <Link to="/">검색 결과 확인</Link>
-                    </li>
-                    <li>
-                      <Link to="/">상세 검색</Link>
-                    </li>
-                    <li>
-                      <Link to="/">검색 결과 이용</Link>
-                    </li>
-                    <li>
-                      <Link to="/">재검색</Link>
-                    </li>
-                    <li>
-                      <Link to="/">검색 종료</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/visit_02"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/visit_02">방문</Link>
                     </li>
                   </ul>
                 </li>
-                <li>
-                  <Link to="/">로그인</Link>
+                <li
+                  className={
+                    location.pathname.startsWith("/service/search")
+                      ? "active"
+                      : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/service/search_01">검색</Link>
                   <ul className="depth3">
-                    <li>
-                      <Link to="/">개요</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/search_01"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/search_01">개요</Link>
                     </li>
-                    <li>
-                      <Link to="/">로그인 기능 찾기</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/search_02"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/search_02">검색 기능 찾기</Link>
                     </li>
-                    <li>
-                      <Link to="/">로그인 안내</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/search_03"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/search_03">검색어 입력</Link>
                     </li>
-                    <li>
-                      <Link to="/">로그인 방식 확인/선택</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/search_04"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/search_04">검색 결과 확인</Link>
                     </li>
-                    <li>
-                      <Link to="/">로그인 정보 입력</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/search_05"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/search_05">상세 검색</Link>
                     </li>
-                    <li>
-                      <Link to="/">로그인 완료</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/search_06"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/search_06">검색 결과 이용</Link>
                     </li>
-                    <li>
-                      <Link to="/">서비스 이용</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/search_07"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/search_07">재검색</Link>
                     </li>
-                    <li>
-                      <Link to="/">로그아웃</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/search_08"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/search_08">검색 종료</Link>
                     </li>
                   </ul>
                 </li>
-                <li>
-                  <Link to="/">신청</Link>
+                <li
+                  className={
+                    location.pathname.startsWith("/service/login")
+                      ? "active"
+                      : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/service/login_01">로그인</Link>
                   <ul className="depth3">
-                    <li>
-                      <Link to="/">개요</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/login_01"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/login_01">개요</Link>
                     </li>
-                    <li>
-                      <Link to="/">신청 대상 탐색</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/login_02"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/login_02">로그인 기능 찾기</Link>
                     </li>
-                    <li>
-                      <Link to="/">서비스 정보 확인</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/login_03"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/login_03">로그인 안내</Link>
                     </li>
-                    <li>
-                      <Link to="/">유의 사항/자격 확인</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/login_04"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/login_04">로그인 방식 확인/선택</Link>
                     </li>
-                    <li>
-                      <Link to="/">신청서 작성</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/login_05"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/login_05">로그인 정보 입력</Link>
                     </li>
-                    <li>
-                      <Link to="/">확인/확정</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/login_06"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/login_06">로그인 완료</Link>
                     </li>
-                    <li>
-                      <Link to="/">완료</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/login_07"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/login_07">서비스 이용</Link>
                     </li>
-                    <li>
-                      <Link to="/">신청 결과 확인</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/login_08"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/login_08">로그아웃</Link>
                     </li>
                   </ul>
                 </li>
-                <li>
-                  <Link to="/">정책정보 확인</Link>
+                <li
+                  className={
+                    location.pathname.startsWith("/service/request")
+                      ? "active"
+                      : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/service/request_01">신청</Link>
                   <ul className="depth3">
-                    <li>
-                      <Link to="/">개요</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/request_01"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/request_01">개요</Link>
                     </li>
-                    <li>
-                      <Link to="/">정책 탐색</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/request_02"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/request_02">신청 대상 탐색</Link>
                     </li>
-                    <li>
-                      <Link to="/">정보 확인</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/request_03"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/request_03">서비스 정보 확인</Link>
                     </li>
-                    <li>
-                      <Link to="/">정책 자료 탐색</Link>
+                    <li
+                      className={
+                        location.pathname === "/service/request_04"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/request_04">유의 사항/자격 확인</Link>
+                    </li>
+                    <li
+                      className={
+                        location.pathname === "/service/request_05"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/request_05">신청서 작성</Link>
+                    </li>
+                    <li
+                      className={
+                        location.pathname === "/service/request_06"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/request_06">확인/확정</Link>
+                    </li>
+                    <li
+                      className={
+                        location.pathname === "/service/request_07"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/request_07">완료</Link>
+                    </li>
+                    <li
+                      className={
+                        location.pathname === "/service/request_08"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/request_08">신청 결과 확인</Link>
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  className={
+                    location.pathname.startsWith("/service/policy")
+                      ? "active"
+                      : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/service/policy_01">정책정보 확인</Link>
+                  <ul className="depth3">
+                    <li
+                      className={
+                        location.pathname === "/service/policy_01"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/policy_01">개요</Link>
+                    </li>
+                    <li
+                      className={
+                        location.pathname === "/service/policy_02"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/policy_02">정책 탐색</Link>
+                    </li>
+                    <li
+                      className={
+                        location.pathname === "/service/policy_03"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/policy_03">정보 확인</Link>
+                    </li>
+                    <li
+                      className={
+                        location.pathname === "/service/policy_04"
+                          ? "active"
+                          : ""
+                      }
+                      onClick={TogglehandleClick}
+                    >
+                      <Link to="/service/policy_04">정책 자료 탐색</Link>
                     </li>
                   </ul>
                 </li>

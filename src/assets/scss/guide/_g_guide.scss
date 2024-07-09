@@ -34,7 +34,8 @@ body {
             width: 4.9rem;
             height: 4.9rem;
             margin-right: var(--#{$prefix}spacer-2);
-            background: url("https://uiux.egovframe.go.kr/resources/img/guide/common/head_logo.svg") no-repeat center;
+            background: url("https://uiux.egovframe.go.kr/resources/img/guide/common/head_logo.svg")
+              no-repeat center;
             background-size: contain;
           }
         }
@@ -60,7 +61,12 @@ body {
               background-color: $secondary;
             }
             a {
-              @include flex-layout($d: inline-flex, $fd: column, $ai: center, $jc: center);
+              @include flex-layout(
+                $d: inline-flex,
+                $fd: column,
+                $ai: center,
+                $jc: center
+              );
               position: relative;
               //height: 3.2rem;
               padding: var(--#{$prefix}spacer-4) var(--#{$prefix}spacer-3);
@@ -110,7 +116,8 @@ body {
           display: none;
           @include position($t: 2.4rem, $r: 2.4rem);
           @include foursquare(2.4rem);
-          background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_close_24.svg") no-repeat;
+          background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_close_24.svg")
+            no-repeat;
           background-size: contain;
         }
       }
@@ -132,7 +139,8 @@ body {
             @include pseudo();
             width: 2rem;
             height: 2rem;
-            background: url("https://uiux.egovframe.go.kr/resources/img/guide/common/arr_lnb.svg") no-repeat;
+            background: url("https://uiux.egovframe.go.kr/resources/img/guide/common/arr_lnb.svg")
+              no-repeat;
             background-size: contain;
             transition: $transition-base;
             transform: translateY(-50%) rotate(-90deg);
@@ -289,7 +297,8 @@ body {
           @include pseudo();
           width: 2rem;
           height: 2rem;
-          background: url("https://uiux.egovframe.go.kr/resources/img/guide/common/arr_lnb.svg") no-repeat;
+          background: url("https://uiux.egovframe.go.kr/resources/img/guide/common/arr_lnb.svg")
+            no-repeat;
           background-size: contain;
           transform: translateX(-50%) rotate(180deg);
         }
@@ -387,7 +396,8 @@ body {
       position: relative;
       gap: var(--#{$prefix}spacer-1) var(--#{$prefix}spacer-4);
       min-height: 3.2rem;
-      padding: var(--#{$prefix}spacer-2) var(--krds-spacer-4) var(--krds-spacer-2) 4.8rem;
+      padding: var(--#{$prefix}spacer-2) var(--krds-spacer-4)
+        var(--krds-spacer-2) 4.8rem;
     }
     .nuri-txt {
       @include flex-layout($ai: center);
@@ -402,8 +412,8 @@ body {
         width: 2.4rem;
         height: 1.6rem;
         margin-right: var(--#{$prefix}spacer-2);
-        background: url("https://uiux.egovframe.go.kr/resources/img/pattern/content/top_ban_ico_flag.svg") no-repeat
-          center;
+        background: url("https://uiux.egovframe.go.kr/resources/img/pattern/content/top_ban_ico_flag.svg")
+          no-repeat center;
         background-size: contain;
       }
     }
@@ -903,8 +913,8 @@ body {
         @include pseudo();
         width: 100%;
         height: 100%;
-        background: url("https://uiux.egovframe.go.kr/resources/img/guide/contents/main/img_visual.png") no-repeat 100%
-          100%;
+        background: url("https://uiux.egovframe.go.kr/resources/img/guide/contents/main/img_visual.png")
+          no-repeat 100% 100%;
         background-size: contain;
       }
     }
@@ -1023,8 +1033,8 @@ body {
           @include flex-layout($ai: center, $jc: space-between);
           width: 100%;
           min-height: 6.4rem;
-          padding: var(--#{$prefix}spacer-10) var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-10)
-            var(--#{$prefix}spacer-36);
+          padding: var(--#{$prefix}spacer-10) var(--#{$prefix}spacer-6)
+            var(--#{$prefix}spacer-10) var(--#{$prefix}spacer-36);
           border: 1px solid var(--#{$prefix}gray-30);
           border-radius: 1.2rem;
           color: var(--#{$prefix}gray-90);
@@ -1034,8 +1044,8 @@ body {
           @include pseudo();
           width: 12rem;
           height: 100%;
-          background: url("https://uiux.egovframe.go.kr/resources/img/guide/contents/main/ico_figma.svg") no-repeat
-            center;
+          background: url("https://uiux.egovframe.go.kr/resources/img/guide/contents/main/ico_figma.svg")
+            no-repeat center;
           background-size: 5.6rem;
         }
       }
@@ -1251,8 +1261,8 @@ body {
       .mob-menu {
         display: inline-flex;
         @include foursquare(2.4rem);
-        background: url("https://uiux.egovframe.go.kr/resources/img/pattern/layout/head_ico_navi_all.svg") no-repeat
-          center;
+        background: url("https://uiux.egovframe.go.kr/resources/img/pattern/layout/head_ico_navi_all.svg")
+          no-repeat center;
         background-size: contain;
       }
     }
@@ -1274,10 +1284,7 @@ body {
         width: 100%;
         height: 100%;
         opacity: 0;
-        transition:
-          visibility 0.15s 0.3s,
-          z-index 0s 0.3s,
-          opacity 0.2s;
+        transition: visibility 0.15s 0.3s, z-index 0s 0.3s, opacity 0.2s;
         background-color: var(--#{$prefix}white);
         > * {
           width: 100%;
@@ -1458,8 +1465,8 @@ body {
             flex-direction: column;
             align-items: flex-start;
             gap: 2.4rem;
-            padding: var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-6)
-              var(--#{$prefix}spacer-20);
+            padding: var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-6)
+              var(--#{$prefix}spacer-6) var(--#{$prefix}spacer-20);
           }
           &::before {
             width: 8rem;
@@ -1537,4 +1544,7 @@ body {
       }
     }
   }
+}
+.main .figma-area.pdf .box-group-area > li::before {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/guide/contents/main/ico_pdf.svg");
 }
