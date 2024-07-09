@@ -256,7 +256,7 @@
             .btn-del {
               width: var(--#{$prefix}btnChipOutline-size-#{$default});
               height: var(--#{$prefix}btnChipOutline-size-#{$default});
-
+              background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_chip_del.svg");
               background-size: contain;
               &:focus {
                 @include focus($offset: 0.4rem);

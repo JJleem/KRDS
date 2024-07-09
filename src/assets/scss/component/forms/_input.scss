@@ -164,7 +164,8 @@ input[type="text"]::-ms-clear {
     height: 4rem;
     padding: var(--#{$prefix}spacer-4);
     transform: translateY(-50%);
-
+    background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_calendar.svg")
+      no-repeat center;
     background-size: 2.4rem;
   }
   .range {

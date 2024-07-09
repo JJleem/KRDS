@@ -843,6 +843,7 @@
 .btn-chip-outline .btn-del {
   width: var(--krds-btnChipOutline-size-lg);
   height: var(--krds-btnChipOutline-size-lg);
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_chip_del.svg");
   background-size: contain;
 }
 .btn-chip-outline .btn-del:focus {
@@ -870,6 +871,7 @@
 .btn-chip-outline .btn-del {
   width: var(--krds-btnChipOutline-size-lg);
   height: var(--krds-btnChipOutline-size-lg);
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_chip_del.svg");
   background-size: contain;
 }
 .btn-chip-outline .btn-del:focus {
@@ -886,6 +888,7 @@
 .btn-chip-outline .btn-del {
   width: var(--krds-btnChipOutline-size-lg);
   height: var(--krds-btnChipOutline-size-lg);
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_chip_del.svg");
   background-size: contain;
 }
 .btn-chip-outline .btn-del:focus {
@@ -902,6 +905,7 @@
 .btn-chip-outline .btn-del {
   width: var(--krds-btnChipOutline-size-lg);
   height: var(--krds-btnChipOutline-size-lg);
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_chip_del.svg");
   background-size: contain;
 }
 .btn-chip-outline .btn-del:focus {
@@ -918,6 +922,7 @@
 .btn-chip-outline .btn-del {
   width: var(--krds-btnChipOutline-size-lg);
   height: var(--krds-btnChipOutline-size-lg);
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_chip_del.svg");
   background-size: contain;
 }
 .btn-chip-outline .btn-del:focus {
@@ -934,6 +939,7 @@
 .btn-chip-outline .btn-del {
   width: var(--krds-btnChipOutline-size-lg);
   height: var(--krds-btnChipOutline-size-lg);
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_chip_del.svg");
   background-size: contain;
 }
 .btn-chip-outline .btn-del:focus {
@@ -950,6 +956,7 @@
 .btn-chip-outline .btn-del {
   width: var(--krds-btnChipOutline-size-lg);
   height: var(--krds-btnChipOutline-size-lg);
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_chip_del.svg");
   background-size: contain;
 }
 .btn-chip-outline .btn-del:focus {
@@ -966,6 +973,7 @@
 .btn-chip-outline .btn-del {
   width: var(--krds-btnChipOutline-size-lg);
   height: var(--krds-btnChipOutline-size-lg);
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_chip_del.svg");
   background-size: contain;
 }
 .btn-chip-outline .btn-del:focus {
@@ -982,6 +990,7 @@
 .btn-chip-outline .btn-del {
   width: var(--krds-btnChipOutline-size-lg);
   height: var(--krds-btnChipOutline-size-lg);
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_chip_del.svg");
   background-size: contain;
 }
 .btn-chip-outline .btn-del:focus {
@@ -998,6 +1007,7 @@
 .btn-chip-outline .btn-del {
   width: var(--krds-btnChipOutline-size-lg);
   height: var(--krds-btnChipOutline-size-lg);
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_chip_del.svg");
   background-size: contain;
 }
 .btn-chip-outline .btn-del:focus {
@@ -1014,6 +1024,7 @@
 .btn-chip-outline .btn-del {
   width: var(--krds-btnChipOutline-size-lg);
   height: var(--krds-btnChipOutline-size-lg);
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_chip_del.svg");
   background-size: contain;
 }
 .btn-chip-outline .btn-del:focus {
@@ -1030,6 +1041,7 @@
 .btn-chip-outline .btn-del {
   width: var(--krds-btnChipOutline-size-lg);
   height: var(--krds-btnChipOutline-size-lg);
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_chip_del.svg");
   background-size: contain;
 }
 .btn-chip-outline .btn-del:focus {
@@ -1890,7 +1902,6 @@ input[type=button] {
   cursor: pointer;
   font: inherit;
   color: inherit;
-  appearance: button;
 }
 
 button::-moz-focus-inner,
@@ -2187,6 +2198,9 @@ caption {
   border-color: var(--krds-gray-40);
   color: var(--krds-gray-60);
 }
+.btn.ico-upload::before {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_upload_20_wh.svg");
+}
 .btn[class*=ico-]::after {
   display: inline-flex;
   content: "";
@@ -2324,8 +2338,14 @@ caption {
 .btn-txt.ico-share::before {
   background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_share_20.svg");
 }
+.btn-txt.ico-share::after {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_share_20.svg") !important;
+}
 .btn-txt.ico-like::before {
   background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_like_20.svg");
+}
+.btn-txt.ico-like::after {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_like_20.svg") !important;
 }
 .btn-txt.iico-more::after {
   background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_arr1_20_right.svg") !important;
@@ -2475,6 +2495,36 @@ caption {
     height: 2.4rem;
   }
 }
+.btn-ico.ico-pw-visible {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_pw_visible.svg");
+}
+
+.ico-func::before {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_arr_func_20.svg");
+}
+
+.btn-txt.ico-arr::after {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_arr_20_right.svg") !important;
+}
+.btn-txt.ico-more::after {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_arr_20_right.svg") !important;
+}
+.btn-txt.ico-down::after {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_file_20.svg") !important;
+}
+.btn-txt.ico-del::before {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_del1_20.svg");
+}
+
+.btn.ico-sch::after {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_sch_40.svg") !important;
+}
+
+.btn-chip-outline.btn-del {
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_chip_del.svg");
+  background-size: contain;
+}
+
 .helper-area .tab .btn-tab {
   background-color: transparent;
   border-color: transparent;
@@ -2756,6 +2806,10 @@ caption {
   height: 2.4rem;
   background-repeat: no-repeat;
   background-position: center;
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_invalid_ok_20.svg") no-repeat;
+}
+.file-upload-result .upload-list .in .ico-invalid.error {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_invalid_error_20.svg");
 }
 .file-upload-result .upload-list .file-hint {
   padding-top: var(--krds-spacer-4);
@@ -3566,7 +3620,9 @@ caption {
   content: "";
   width: 2rem;
   height: 2rem;
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_tooltip_20.svg");
   background-size: contain;
+  margin-right: 4px;
 }
 .krds-tooltip-wrap .tool-in {
   display: none;
@@ -4176,6 +4232,7 @@ input[type=text]::-ms-clear {
   height: 4rem;
   padding: var(--krds-spacer-4);
   transform: translateY(-50%);
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_calendar.svg") no-repeat center;
   background-size: 2.4rem;
 }
 .datepicker-input .range::after {
@@ -4540,6 +4597,7 @@ input[type=checkbox] {
   margin-left: calc((2rem + var(--krds-spacer-1)) * -1);
   margin-right: var(--krds-spacer-1);
   vertical-align: top;
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_hint_20.svg");
   background-size: contain;
 }
 .form-group .is-error ~ .form-hint-invalid {
@@ -12470,6 +12528,11 @@ input[type=checkbox] {
   margin-top: var(--krds-spacer-4);
 }
 
+.form-chip-outline::before {
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip.svg");
+  background-size: contain;
+}
+
 /* 공통 */
 /* 공통 */
 /* **** area mixin ****/
@@ -12726,6 +12789,7 @@ body {
 }
 #g-wrap #g-container .g-aside .inner .lnb .depth3 > li > a .sub {
   font-weight: 400;
+  margin-left: 3px;
 }
 #g-wrap #g-container .g-aside .inner .lnb .depth3 > li.active > a {
   color: #246beb;

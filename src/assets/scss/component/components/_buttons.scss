@@ -107,7 +107,11 @@
       color: var(--#{$prefix}gray-60);
     }
   }
-
+  &.ico-upload {
+    &::before {
+      background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_upload_20_wh.svg");
+    }
+  }
   //txt + ico
   &[class*="ico-"] {
     &::after {
@@ -476,11 +480,22 @@
       background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_file_20.svg") !important;
     }
   }
+  &.ico-del {
+    &::before {
+      background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_del1_20.svg");
+    }
+  }
 }
 .btn {
   &.ico-sch {
     &::after {
       background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_sch_40.svg") !important;
     }
+  }
+}
+.btn-chip-outline {
+  &.btn-del {
+    background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_chip_del.svg");
+    background-size: contain;
   }
 }
