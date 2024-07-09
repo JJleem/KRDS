@@ -205,7 +205,7 @@
     border-radius: 10rem;
     border: 0.1rem solid var(--#{$prefix}gray-40);
     background-color: var(--#{$prefix}white);
-
+    background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_refresh_16.svg");
     background-size: 1.6rem;
   }
   &.ico-toggle-r {
@@ -220,8 +220,10 @@
     border-radius: 10rem;
     border: 0.1rem solid var(--#{$prefix}gray-40);
     background-color: var(--#{$prefix}white);
-
+    background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_swiper_prev.svg")
+      no-repeat center;
     background-size: 2.4rem;
+    z-index: 99;
     &.disabled {
       background-color: var(--#{$prefix}secondary-5);
     }
@@ -230,8 +232,10 @@
     border-radius: 10rem;
     border: 0.1rem solid var(--#{$prefix}gray-40);
     background-color: var(--#{$prefix}white);
-
+    background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_swiper_next.svg")
+      no-repeat center;
     background-size: 2.4rem;
+    z-index: 99;
     &.disabled {
       background-color: var(--#{$prefix}secondary-5);
     }
@@ -507,5 +511,10 @@
       background-size: contain;
       background-position: center;
     }
+  }
+}
+.btn-ico {
+  &.ico-help {
+    background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_help_24.svg");
   }
 }

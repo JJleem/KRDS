@@ -66,7 +66,7 @@
       margin-left: calc($value * -1);
       margin-right: var(--#{$prefix}spacer-1);
       vertical-align: top;
-background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_hint_20.svg");
+      background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_hint_20.svg");
       background-size: contain;
     }
   }
@@ -75,7 +75,7 @@ background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico
       color: var(--#{$prefix}point);
       &::before {
         background-color: transparent;
-
+        background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_hint_error.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;

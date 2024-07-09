@@ -5,6 +5,10 @@
 /* **** text attr ****/
 /* **** scroll ****/
 /* **** form mixin ****/
+.form-chip .radio:checked ~ .form-chip-outline::before {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
+}
+
 .text-white {
   color: #fff;
 }
@@ -1254,11 +1258,7 @@
 .form-chip.sm .radio ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-sm);
   height: var(--krds-chkChipOutline-ico-sm);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
-}
-.form-chip.sm .radio:checked ~ .form-chip-outline::before {
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
 }
 .form-chip .radio ~ .form-chip-outline {
   gap: var(--krds-chkChipOutline-gap-sm);
@@ -1270,7 +1270,6 @@
 .form-chip .radio ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-sm);
   height: var(--krds-chkChipOutline-ico-sm);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
 }
 
 .form-chip.md .radio ~ .form-chip-outline {
@@ -1283,11 +1282,7 @@
 .form-chip.md .radio ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-md);
   height: var(--krds-chkChipOutline-ico-md);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
-}
-.form-chip.md .radio:checked ~ .form-chip-outline::before {
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
 }
 .form-chip .radio ~ .form-chip-outline {
   gap: var(--krds-chkChipOutline-gap-md);
@@ -1299,7 +1294,6 @@
 .form-chip .radio ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-md);
   height: var(--krds-chkChipOutline-ico-md);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
 }
 
 .form-chip.lg .radio ~ .form-chip-outline {
@@ -1312,12 +1306,8 @@
 .form-chip.lg .radio ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-lg);
   height: var(--krds-chkChipOutline-ico-lg);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
 }
-.form-chip.lg .radio:checked ~ .form-chip-outline::before {
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
-}
 .form-chip .radio ~ .form-chip-outline {
   gap: var(--krds-chkChipOutline-gap-lg);
   height: var(--krds-rdoChipOutline-h-lg);
@@ -1328,7 +1318,6 @@
 .form-chip .radio ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-lg);
   height: var(--krds-chkChipOutline-ico-lg);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
 }
 
 .form-chip .radio ~ .form-chip-outline {
@@ -1341,7 +1330,6 @@
 .form-chip .radio ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-sm);
   height: var(--krds-chkChipOutline-ico-sm);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
 }
 
 .form-chip .radio ~ .form-chip-outline {
@@ -1354,7 +1342,6 @@
 .form-chip .radio ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-md);
   height: var(--krds-chkChipOutline-ico-md);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
 }
 
 .form-chip .radio ~ .form-chip-outline {
@@ -1367,7 +1354,6 @@
 .form-chip .radio ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-lg);
   height: var(--krds-chkChipOutline-ico-lg);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
 }
 
 .form-chip .radio ~ .form-chip-outline {
@@ -1380,7 +1366,6 @@
 .form-chip .radio ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-sm);
   height: var(--krds-chkChipOutline-ico-sm);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
 }
 
 .form-chip .radio ~ .form-chip-outline {
@@ -1393,7 +1378,6 @@
 .form-chip .radio ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-md);
   height: var(--krds-chkChipOutline-ico-md);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
 }
 
 .form-chip .radio ~ .form-chip-outline {
@@ -1406,7 +1390,6 @@
 .form-chip .radio ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-lg);
   height: var(--krds-chkChipOutline-ico-lg);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
 }
 
 .form-chip .radio ~ .form-chip-outline {
@@ -1419,7 +1402,6 @@
 .form-chip .radio ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-sm);
   height: var(--krds-chkChipOutline-ico-sm);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
 }
 
 .form-chip .radio ~ .form-chip-outline {
@@ -1432,7 +1414,6 @@
 .form-chip .radio ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-md);
   height: var(--krds-chkChipOutline-ico-md);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
 }
 
 .form-chip .radio ~ .form-chip-outline {
@@ -1445,7 +1426,6 @@
 .form-chip .radio ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-lg);
   height: var(--krds-chkChipOutline-ico-lg);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
 }
 
 .form-chip.sm .checkbox ~ .form-chip-outline {
@@ -1459,9 +1439,6 @@
   width: var(--krds-chkChipOutline-ico-sm);
   height: var(--krds-chkChipOutline-ico-sm);
 }
-.form-chip.sm .checkbox:checked ~ .form-chip-outline::before {
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
-}
 .form-chip .checkbox ~ .form-chip-outline {
   gap: var(--krds-chkChipOutline-gap-sm);
   height: var(--krds-chkChipOutline-h-sm);
@@ -1472,7 +1449,6 @@
 .form-chip .checkbox ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-sm);
   height: var(--krds-chkChipOutline-ico-sm);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
 }
 
@@ -1487,9 +1463,6 @@
   width: var(--krds-chkChipOutline-ico-md);
   height: var(--krds-chkChipOutline-ico-md);
 }
-.form-chip.md .checkbox:checked ~ .form-chip-outline::before {
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
-}
 .form-chip .checkbox ~ .form-chip-outline {
   gap: var(--krds-chkChipOutline-gap-md);
   height: var(--krds-chkChipOutline-h-md);
@@ -1500,7 +1473,6 @@
 .form-chip .checkbox ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-md);
   height: var(--krds-chkChipOutline-ico-md);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
 }
 
@@ -1515,9 +1487,6 @@
   width: var(--krds-chkChipOutline-ico-lg);
   height: var(--krds-chkChipOutline-ico-lg);
 }
-.form-chip.lg .checkbox:checked ~ .form-chip-outline::before {
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
-}
 .form-chip .checkbox ~ .form-chip-outline {
   gap: var(--krds-chkChipOutline-gap-lg);
   height: var(--krds-chkChipOutline-h-lg);
@@ -1528,7 +1497,6 @@
 .form-chip .checkbox ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-lg);
   height: var(--krds-chkChipOutline-ico-lg);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
 }
 
@@ -1542,7 +1510,6 @@
 .form-chip .checkbox ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-sm);
   height: var(--krds-chkChipOutline-ico-sm);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
 }
 
@@ -1556,7 +1523,6 @@
 .form-chip .checkbox ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-md);
   height: var(--krds-chkChipOutline-ico-md);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
 }
 
@@ -1570,7 +1536,6 @@
 .form-chip .checkbox ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-lg);
   height: var(--krds-chkChipOutline-ico-lg);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
 }
 
@@ -1584,7 +1549,6 @@
 .form-chip .checkbox ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-sm);
   height: var(--krds-chkChipOutline-ico-sm);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
 }
 
@@ -1598,7 +1562,6 @@
 .form-chip .checkbox ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-md);
   height: var(--krds-chkChipOutline-ico-md);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
 }
 
@@ -1612,7 +1575,6 @@
 .form-chip .checkbox ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-lg);
   height: var(--krds-chkChipOutline-ico-lg);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
 }
 
@@ -1626,7 +1588,6 @@
 .form-chip .checkbox ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-sm);
   height: var(--krds-chkChipOutline-ico-sm);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
 }
 
@@ -1640,7 +1601,6 @@
 .form-chip .checkbox ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-md);
   height: var(--krds-chkChipOutline-ico-md);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
 }
 
@@ -1654,7 +1614,6 @@
 .form-chip .checkbox ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-lg);
   height: var(--krds-chkChipOutline-ico-lg);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
 }
 
@@ -1668,7 +1627,6 @@
 .form-chip .checkbox ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-sm);
   height: var(--krds-chkChipOutline-ico-sm);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
 }
 
@@ -1682,7 +1640,6 @@
 .form-chip .checkbox ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-md);
   height: var(--krds-chkChipOutline-ico-md);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
 }
 
@@ -1696,7 +1653,6 @@
 .form-chip .checkbox ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-lg);
   height: var(--krds-chkChipOutline-ico-lg);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
 }
 
@@ -1710,7 +1666,6 @@
 .form-chip .checkbox ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-sm);
   height: var(--krds-chkChipOutline-ico-sm);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
 }
 
@@ -1724,7 +1679,6 @@
 .form-chip .checkbox ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-md);
   height: var(--krds-chkChipOutline-ico-md);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
 }
 
@@ -1738,7 +1692,6 @@
 .form-chip .checkbox ~ .form-chip-outline::before {
   width: var(--krds-chkChipOutline-ico-lg);
   height: var(--krds-chkChipOutline-ico-lg);
-  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
   background-size: contain;
 }
 
@@ -1771,6 +1724,10 @@
 /* **** text attr ****/
 /* **** scroll ****/
 /* **** form mixin ****/
+.form-chip .radio:checked ~ .form-chip-outline::before {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
+}
+
 html,
 body {
   position: relative;
@@ -2087,6 +2044,10 @@ caption {
 /* **** text attr ****/
 /* **** scroll ****/
 /* **** form mixin ****/
+.form-chip .radio:checked ~ .form-chip-outline::before {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
+}
+
 .accordion {
   border-top: 1px solid var(--krds-gray-40);
 }
@@ -2324,6 +2285,7 @@ caption {
   border-radius: 10rem;
   border: 0.1rem solid var(--krds-gray-40);
   background-color: var(--krds-white);
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_refresh_16.svg");
   background-size: 1.6rem;
 }
 .btn-ico.ico-toggle-r {
@@ -2336,7 +2298,9 @@ caption {
   border-radius: 10rem;
   border: 0.1rem solid var(--krds-gray-40);
   background-color: var(--krds-white);
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_swiper_prev.svg") no-repeat center;
   background-size: 2.4rem;
+  z-index: 99;
 }
 .btn-ico.ico-page-prev.disabled {
   background-color: var(--krds-secondary-5);
@@ -2345,7 +2309,9 @@ caption {
   border-radius: 10rem;
   border: 0.1rem solid var(--krds-gray-40);
   background-color: var(--krds-white);
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_swiper_next.svg") no-repeat center;
   background-size: 2.4rem;
+  z-index: 99;
 }
 .btn-ico.ico-page-next.disabled {
   background-color: var(--krds-secondary-5);
@@ -2569,6 +2535,10 @@ caption {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+.btn-ico.ico-help {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_help_24.svg");
 }
 
 .helper-area .tab .btn-tab {
@@ -3773,6 +3743,10 @@ caption {
 /* **** text attr ****/
 /* **** scroll ****/
 /* **** form mixin ****/
+.form-chip .radio:checked ~ .form-chip-outline::before {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
+}
+
 /* 
  * name : Checkbox Css
  * date : 2024-01-03
@@ -4652,6 +4626,7 @@ input[type=checkbox] {
 }
 .form-group .is-error ~ .form-hint-invalid::before {
   background-color: transparent;
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_hint_error.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -4846,7 +4821,8 @@ input[type=checkbox] {
   width: 100%;
   height: var(--krds-select-h-lg);
   padding: var(--krds-select-pd-lg);
-  background-color: var(--krds-white);
+  background-color: var(--krds-white) !important;
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_select_lg.svg");
   background-repeat: no-repeat;
   background-position: center right var(--krds-select-rn-lg);
   border: 1px solid var(--krds-gray-60);
@@ -4881,6 +4857,10 @@ input[type=checkbox] {
 /* **** text attr ****/
 /* **** scroll ****/
 /* **** form mixin ****/
+.form-chip .radio:checked ~ .form-chip-outline::before {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
+}
+
 /* **** Layout  **** */
 #wrap {
   display: flex;
@@ -6816,6 +6796,10 @@ input[type=checkbox] {
 /* **** text attr ****/
 /* **** scroll ****/
 /* **** form mixin ****/
+.form-chip .radio:checked ~ .form-chip-outline::before {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
+}
+
 /* **** COMMON **** */
 /* ** accessibility ** */
 .sr-only {
@@ -7884,6 +7868,10 @@ input[type=checkbox] {
 /* **** text attr ****/
 /* **** scroll ****/
 /* **** form mixin ****/
+.form-chip .radio:checked ~ .form-chip-outline::before {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
+}
+
 /* ***** MAIN ***** */
 /* ** 긴급공지 **/
 .main-urgent-wrap {
@@ -9367,6 +9355,7 @@ input[type=checkbox] {
   color: var(--krds-gray-90);
   padding-right: var(--krds-spacer-6);
   border: 0;
+  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_select_20.svg") no-repeat center right;
   background-size: auto 2rem;
 }
 .search-list-top .sch-sort .w-sort-btn {
@@ -12582,7 +12571,6 @@ input[type=checkbox] {
 }
 
 .form-chip-outline::before {
-  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip.svg");
   background-size: contain;
 }
 
@@ -12670,12 +12658,75 @@ input[type=checkbox] {
   background-size: contain;
 }
 
+.pop-agree-wrap {
+  display: flex;
+  align-items: normal;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: var(--krds-spacer-8);
+}
+
+.pop-agree-wrap .agree-head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: var(--krds-spacer-4);
+}
+
+.pop-agree-wrap .agree-body {
+  height: 38rem;
+  padding: var(--krds-spacer-1);
+  overflow: hidden;
+  border-radius: var(--krds-rd-12);
+  border: 0.1rem solid var(--krds-gray-40);
+}
+
+.pop-agree-wrap .agree-head .tit {
+  flex: 1;
+  font-size: var(--krds---krds-fz-title-md);
+}
+
+.pop-agree-wrap .agree-head .agree-navigation {
+  display: inline-flex;
+  gap: var(--krds-spacer-2);
+}
+
+.pop-agree-wrap .agree-head .agree-navigation .btn {
+  width: 4rem;
+  height: 4rem;
+}
+
+.pop-agree-wrap .agree-body .in {
+  display: flex;
+  align-items: normal;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: var(--krds-spacer-6);
+  height: 100%;
+  padding: var(--krds-spacer-5);
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.pop-agree-wrap .agree-body .agree-t1 {
+  font-weight: 700;
+}
+
+.agree-box .form-check {
+  text-align: center;
+}
+
 /* 공통 */
 /* 공통 */
 /* **** area mixin ****/
 /* **** text attr ****/
 /* **** scroll ****/
 /* **** form mixin ****/
+.form-chip .radio:checked ~ .form-chip-outline::before {
+  background-image: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip_checked.svg");
+}
+
 /* **** guide css **** */
 body {
   overflow-x: initial;

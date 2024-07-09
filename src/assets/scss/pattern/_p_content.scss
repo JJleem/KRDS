@@ -1335,7 +1335,8 @@
       color: var(--#{$prefix}gray-90);
       padding-right: var(--#{$prefix}spacer-6);
       border: 0;
-
+      background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_select_20.svg")
+        no-repeat center right;
       background-size: auto 2rem;
     }
     .w-sort-btn {
@@ -4693,7 +4694,7 @@
   }
 }
 .form-chip-outline::before {
-  background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip.svg");
+  // background: url("https://uiux.egovframe.go.kr/resources/img/component/common/ico_check_chip.svg");
   background-size: contain;
 }
 .agree-box {
@@ -4770,4 +4771,54 @@
   background: url("https://uiux.egovframe.go.kr/resources/img/pattern/content/ico_check_rd_20.svg")
     no-repeat center;
   background-size: contain;
+}
+.pop-agree-wrap {
+  display: flex;
+  align-items: normal;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: var(--krds-spacer-8);
+}
+.pop-agree-wrap .agree-head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: var(--krds-spacer-4);
+}
+.pop-agree-wrap .agree-body {
+  height: 38rem;
+  padding: var(--krds-spacer-1);
+  overflow: hidden;
+  border-radius: var(--krds-rd-12);
+  border: 0.1rem solid var(--krds-gray-40);
+}
+.pop-agree-wrap .agree-head .tit {
+  flex: 1;
+  font-size: var(--krds---krds-fz-title-md);
+}
+.pop-agree-wrap .agree-head .agree-navigation {
+  display: inline-flex;
+  gap: var(--krds-spacer-2);
+}
+.pop-agree-wrap .agree-head .agree-navigation .btn {
+  width: 4rem;
+  height: 4rem;
+}
+.pop-agree-wrap .agree-body .in {
+  display: flex;
+  align-items: normal;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: var(--krds-spacer-6);
+  height: 100%;
+  padding: var(--krds-spacer-5);
+  overflow: hidden;
+  overflow-y: auto;
+}
+.pop-agree-wrap .agree-body .agree-t1 {
+  font-weight: 700;
+}
+.agree-box .form-check {
+  text-align: center;
 }
