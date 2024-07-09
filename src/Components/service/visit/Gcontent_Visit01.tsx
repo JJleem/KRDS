@@ -1,7 +1,6 @@
 import React from "react";
-import TopBtn from "../common/topbtn/TopBtn";
-
-const Gcontent = () => {
+import TopBtn from "../../common/topbtn/TopBtn";
+const Gcontent_Visit01 = () => {
   return (
     <div className="g-content">
       <div className="g-title-area">
@@ -130,4 +129,4 @@ const Gcontent = () => {
   );
 };
 
-export default Gcontent;
+export default Gcontent_Visit01;

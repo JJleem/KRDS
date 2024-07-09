@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import TopBtn from "../common/topbtn/TopBtn";
+import TopBtn from "../../common/topbtn/TopBtn";
 import Code from "./code/Code";
 
 const Gcontent = () => {
- 
   return (
     <div className="g-content">
       <div className="g-title-area">

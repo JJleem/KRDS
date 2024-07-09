@@ -61,14 +61,14 @@ const Header = () => {
                 location.pathname.startsWith("/global") ? "active" : undefined
               }
             >
-              <Link to="/global">기본 패턴</Link>
+              <Link to="/global/global_1">기본 패턴</Link>
             </li>
             <li
               className={
                 location.pathname.startsWith("/service") ? "active" : undefined
               }
             >
-              <Link to="/service">서비스 패턴</Link>
+              <Link to="/service/visit_01">서비스 패턴</Link>
             </li>
           </ul>
         </nav>

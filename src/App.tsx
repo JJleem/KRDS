@@ -27,6 +27,9 @@ import Foundation07 from "./pages/foundation/Foundation07";
 import StyleGuide from "./pages/styleguide/StyleGuide";
 import StyleGuide_Color from "./pages/styleguide/StyleGuide_Color";
 import StyleGuide_Typography from "./pages/styleguide/StyleGuide_Typography";
+import StyleGuide_Shape from "./pages/styleguide/StyleGuide_Shape";
+import StyleGuide_Layout from "./pages/styleguide/StyleGuide_Layout";
+import StyleGuide_SystemIcon from "./pages/styleguide/StyleGuide_SystemIcon";
 //Component
 import Component from "./pages/component/identity/Component";
 import Component_Footer from "./pages/component/identity/Component_Footer";
@@ -38,13 +41,6 @@ import Component_Breadcrumb from "./pages/component/search/Component_Breadcrumb"
 import Component_SideNavigation from "./pages/component/search/Component_SideNavigation";
 import Component_InPageNavigation from "./pages/component/search/Component_InPageNavigation";
 import Component_Pagination from "./pages/component/search/Component_Pagination";
-//Global
-import Global from "./pages/global/Global";
-//Service
-import Service from "./pages/service/Service";
-import StyleGuide_Shape from "./pages/styleguide/StyleGuide_Shape";
-import StyleGuide_Layout from "./pages/styleguide/StyleGuide_Layout";
-import StyleGuide_SystemIcon from "./pages/styleguide/StyleGuide_SystemIcon";
 import Component_StructuredList from "./pages/component/layout/Component_StructuredList";
 import Component_CriticalAlerts from "./pages/component/layout/Component_CriticalAlerts";
 import Component_Calendar from "./pages/component/layout/Component_Calendar";
@@ -72,6 +68,21 @@ import Component_DateInput from "./pages/component/input/Component_DateInput";
 import Component_Textarea from "./pages/component/input/Component_Textarea";
 import Component_TextInput from "./pages/component/input/Component_TextInput";
 import Component_FileUpload from "./pages/component/input/Component_FileUpload";
+//Global
+import Global from "./pages/global/Global";
+import Global02 from "./pages/global/Global02";
+import Global03 from "./pages/global/Global03";
+import Global04 from "./pages/global/Global04";
+import Global05 from "./pages/global/Global05";
+import Global06 from "./pages/global/Global06";
+import Global07 from "./pages/global/Global07";
+import Global08 from "./pages/global/Global08";
+import Global09 from "./pages/global/Global09";
+import Global10 from "./pages/global/Global10";
+import Global11 from "./pages/global/Global11";
+//Service
+import Visit01 from "./pages/service/visit/Visit01";
+import Visit02 from "./pages/service/visit/Visit02";
 
 function App() {
   return (
@@ -79,7 +90,6 @@ function App() {
       <RecoilRoot>
         <Wrap>
           <HeaderTop />
-
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -275,11 +285,25 @@ function App() {
               element={<Component_FileUpload />}
             />
           </Routes>
+          {/* ///////////////global */}
           <Routes>
-            <Route path="/global" element={<Global />} />
+            <Route path="/global/global_1" element={<Global />} />
+            <Route path="/global/global_2" element={<Global02 />} />
+            <Route path="/global/global_3" element={<Global03 />} />
+            <Route path="/global/global_4" element={<Global04 />} />
+            <Route path="/global/global_5" element={<Global05 />} />
+            <Route path="/global/global_6" element={<Global06 />} />
+            <Route path="/global/global_7" element={<Global07 />} />
+            <Route path="/global/global_8" element={<Global08 />} />
+            <Route path="/global/global_9" element={<Global09 />} />
+            <Route path="/global/global_10" element={<Global10 />} />
+            <Route path="/global/global_11" element={<Global11 />} />
           </Routes>
+          {/* ///////////////global */}
           <Routes>
-            <Route path="/service" element={<Service />} />
+                    {/* ///////////////visit */}
+            <Route path="/service/visit_01" element={<Visit01 />} />
+            <Route path="/service/visit_02" element={<Visit02 />} />
           </Routes>
           <Footer />
         </Wrap>

@@ -824,40 +824,92 @@ const Gaside = () => {
               </button>
               <ul className="depth2">
                 <li
-                  className={clickedIndex === 4 ? "active" : ""}
+                  className={
+                    location.pathname === "/global/global_1" ? "active" : ""
+                  }
                   onClick={TogglehandleClick}
                 >
-                  <Link to="/global">개인 식별 정보 입력</Link>
+                  <Link to="/global/global_1">개인 식별 정보 입력</Link>
                 </li>
-                <li>
-                  <Link to="/">도움</Link>
+                <li
+                  className={
+                    location.pathname === "/global/global_2" ? "active" : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/global/global_2">도움</Link>
                 </li>
-                <li>
-                  <Link to="/">동의</Link>
+                <li
+                  className={
+                    location.pathname === "/global/global_3" ? "active" : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/global/global_3">동의</Link>
                 </li>
-                <li>
-                  <Link to="/">목록 탐색</Link>
+                <li
+                  className={
+                    location.pathname === "/global/global_4" ? "active" : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/global/global_4">목록 탐색</Link>
                 </li>
-                <li>
-                  <Link to="/">사용자 피드백</Link>
+                <li
+                  className={
+                    location.pathname === "/global/global_5" ? "active" : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/global/global_5">사용자 피드백</Link>
                 </li>
-                <li>
-                  <Link to="/">상세 정보 확인</Link>
+                <li
+                  className={
+                    location.pathname === "/global/global_6" ? "active" : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/global/global_6">상세 정보 확인</Link>
                 </li>
-                <li>
-                  <Link to="/">오류</Link>
+                <li
+                  className={
+                    location.pathname === "/global/global_7" ? "active" : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/global/global_7">오류</Link>
                 </li>
-                <li>
-                  <Link to="/">입력폼</Link>
+                <li
+                  className={
+                    location.pathname === "/global/global_8" ? "active" : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/global/global_8">입력폼</Link>
                 </li>
-                <li>
-                  <Link to="/">첨부 파일</Link>
+                <li
+                  className={
+                    location.pathname === "/global/global_9" ? "active" : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/global/global_9">첨부 파일</Link>
                 </li>
-                <li>
-                  <Link to="/">필터링·정렬</Link>
+                <li
+                  className={
+                    location.pathname === "/global/global_10" ? "active" : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/global/global_10">필터링·정렬</Link>
                 </li>
-                <li>
-                  <Link to="/">확인</Link>
+                <li
+                  className={
+                    location.pathname === "/global/global_11" ? "active" : ""
+                  }
+                  onClick={TogglehandleClick}
+                >
+                  <Link to="/global/global_11">확인</Link>
                 </li>
               </ul>
             </li>
