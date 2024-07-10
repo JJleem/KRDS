@@ -4945,6 +4945,10 @@ input[type=checkbox] {
 }
 
 /* header */
+.nuri-txt {
+  overflow-y: hidden;
+}
+
 #header-top {
   position: relative;
   z-index: 70;
