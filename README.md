@@ -86,59 +86,59 @@ KRDS는 한국정보화진흥원에서 제공하는 디지털 정부 서비스 U
 <br>
 ┃ ┃ ┃ ┃ ┗ 📂main<br>
 ┃ ┃ ┗ 📂pattern<br>
-┃ ┗ 📂scss
-┃ ┃ ┣ 📂component
-┃ ┃ ┃ ┣ 📂components
-┃ ┃ ┃ ┃ ┣ 📜_accordion.scss
-┃ ┃ ┃ ┃ ┣ 📜_buttons.scss
-┃ ┃ ┃ ┃ ┣ 📜_coach.scss
-┃ ┃ ┃ ┃ ┣ 📜_disclosure.scss
-┃ ┃ ┃ ┃ ┣ 📜_fileupload.scss
-┃ ┃ ┃ ┃ ┣ 📜_helper.scss
-┃ ┃ ┃ ┃ ┣ 📜_lists.scss
-┃ ┃ ┃ ┃ ┣ 📜_modal.scss
-┃ ┃ ┃ ┃ ┣ 📜_spinner.scss
-┃ ┃ ┃ ┃ ┣ 📜_tables.scss
-┃ ┃ ┃ ┃ ┣ 📜_tabs.scss
-┃ ┃ ┃ ┃ ┗ 📜_tooltip.scss
-┃ ┃ ┃ ┣ 📂forms
-┃ ┃ ┃ ┃ ┣ 📜_checkbox.scss
-┃ ┃ ┃ ┃ ┣ 📜_datepicker.scss
-┃ ┃ ┃ ┃ ┣ 📜_input.scss
-┃ ┃ ┃ ┃ ┣ 📜_layout.scss
-┃ ┃ ┃ ┃ ┣ 📜_radio.scss
-┃ ┃ ┃ ┃ ┗ 📜_select.scss
-┃ ┃ ┃ ┣ 📂mixins
-┃ ┃ ┃ ┃ ┣ 📜_breakpoints.scss
-┃ ┃ ┃ ┃ ┗ 📜_utils.scss
-┃ ┃ ┃ ┣ 📜_colors.scss
-┃ ┃ ┃ ┣ 📜_c_components.scss
-┃ ┃ ┃ ┣ 📜_c_forms.scss
-┃ ┃ ┃ ┣ 📜_c_initialize.scss
-┃ ┃ ┃ ┣ 📜_c_kds.scss
-┃ ┃ ┃ ┣ 📜_fonts.scss
-┃ ┃ ┃ ┣ 📜_functions.scss
-┃ ┃ ┃ ┣ 📜_group_components.scss
-┃ ┃ ┃ ┣ 📜_group_forms.scss
-┃ ┃ ┃ ┣ 📜_group_mixins.scss
-┃ ┃ ┃ ┣ 📜_include.scss
-┃ ┃ ┃ ┣ 📜_reset.scss
-┃ ┃ ┃ ┣ 📜_root.scss
-┃ ┃ ┃ ┗ 📜_variables.scss
-┃ ┃ ┣ 📂guide
-┃ ┃ ┃ ┣ 📜_g_guide.scss
-┃ ┃ ┃ ┗ 📜_prism.scss
-┃ ┃ ┣ 📂pattern
-┃ ┃ ┃ ┣ 📜p_content.css
-┃ ┃ ┃ ┣ 📜p_content.css.map
-┃ ┃ ┃ ┣ 📜_p_common.scss
-┃ ┃ ┃ ┣ 📜_p_content.scss
-┃ ┃ ┃ ┗ 📜_p_layout.scss
-┃ ┃ ┣ 📜style.css
-┃ ┃ ┣ 📜style.css.map
-┃ ┃ ┗ 📜style.scss
-┣ 📂atom
-┃ ┗ 📜Atom.tsx
+┃ ┗ 📂scss<br>
+┃ ┃ ┣ 📂component<br>
+┃ ┃ ┃ ┣ 📂components<br>
+┃ ┃ ┃ ┃ ┣ 📜_accordion.scss<br>
+┃ ┃ ┃ ┃ ┣ 📜_buttons.scss<br>
+┃ ┃ ┃ ┃ ┣ 📜_coach.scss<br>
+┃ ┃ ┃ ┃ ┣ 📜_disclosure.scss<br>
+┃ ┃ ┃ ┃ ┣ 📜_fileupload.scss<br>
+┃ ┃ ┃ ┃ ┣ 📜_helper.scss<br>
+┃ ┃ ┃ ┃ ┣ 📜_lists.scss<br>
+┃ ┃ ┃ ┃ ┣ 📜_modal.scss<br>
+┃ ┃ ┃ ┃ ┣ 📜_spinner.scss<br>
+┃ ┃ ┃ ┃ ┣ 📜_tables.scss<br>
+┃ ┃ ┃ ┃ ┣ 📜_tabs.scss<br>
+┃ ┃ ┃ ┃ ┗ 📜_tooltip.scss<br>
+┃ ┃ ┃ ┣ 📂forms<br>
+┃ ┃ ┃ ┃ ┣ 📜_checkbox.scss<br>
+┃ ┃ ┃ ┃ ┣ 📜_datepicker.scss<br>
+┃ ┃ ┃ ┃ ┣ 📜_input.scss<br>
+┃ ┃ ┃ ┃ ┣ 📜_layout.scss<br>
+┃ ┃ ┃ ┃ ┣ 📜_radio.scss<br>
+┃ ┃ ┃ ┃ ┗ 📜_select.scss<br>
+┃ ┃ ┃ ┣ 📂mixins<br>
+┃ ┃ ┃ ┃ ┣ 📜_breakpoints.scss<br>
+┃ ┃ ┃ ┃ ┗ 📜_utils.scss<br>
+┃ ┃ ┃ ┣ 📜_colors.scss<br>
+┃ ┃ ┃ ┣ 📜_c_components.scss<br>
+┃ ┃ ┃ ┣ 📜_c_forms.scss<br>
+┃ ┃ ┃ ┣ 📜_c_initialize.scss<br>
+┃ ┃ ┃ ┣ 📜_c_kds.scss<br>
+┃ ┃ ┃ ┣ 📜_fonts.scss<br>
+┃ ┃ ┃ ┣ 📜_functions.scss<br>
+┃ ┃ ┃ ┣ 📜_group_components.scss<br>
+┃ ┃ ┃ ┣ 📜_group_forms.scss<br>
+┃ ┃ ┃ ┣ 📜_group_mixins.scss<br>
+┃ ┃ ┃ ┣ 📜_include.scss<br>
+┃ ┃ ┃ ┣ 📜_reset.scss<br>
+┃ ┃ ┃ ┣ 📜_root.scss<br>
+┃ ┃ ┃ ┗ 📜_variables.scss<br>
+┃ ┃ ┣ 📂guide<br>
+┃ ┃ ┃ ┣ 📜_g_guide.scss<br>
+┃ ┃ ┃ ┗ 📜_prism.scss<br>
+┃ ┃ ┣ 📂pattern<br>
+┃ ┃ ┃ ┣ 📜p_content.css<br>
+┃ ┃ ┃ ┣ 📜p_content.css.map<br>
+┃ ┃ ┃ ┣ 📜_p_common.scss<br>
+┃ ┃ ┃ ┣ 📜_p_content.scss<br>
+┃ ┃ ┃ ┗ 📜_p_layout.scss<br>
+┃ ┃ ┣ 📜style.css<br>
+┃ ┃ ┣ 📜style.css.map<br>
+┃ ┃ ┗ 📜style.scss<br>
+┣ 📂atom<br>
+┃ ┗ 📜Atom.tsx<br>
 ┣ 📂Components
 ┃ ┣ 📂common
 ┃ ┃ ┣ 📂aside
