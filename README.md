@@ -33,50 +33,55 @@ KRDS는 한국정보화진흥원에서 제공하는 디지털 정부 서비스 U
 ┣ 📂assets
 <br>
 ┃ ┣ 📂css
+<br>
 ┃ ┃ ┣ 📂old
-
+<br>
 ┃ ┃ ┃ ┗ 📜style.css
-
+<br>
 ┃ ┃ ┣ 📜style.css
-
+<br>
 ┃ ┃ ┣ 📜style.css.map
-
+<br>
 ┃ ┃ ┣ 📜style.min.css
-
+<br>
 ┃ ┃ ┗ 📜style.min.css.map
-
+<br>
 ┃ ┣ 📂fonts
-
+<br>
 ┃ ┃ ┣ 📜PretendardGOV-Bold.subset.woff
-
+<br>
 ┃ ┃ ┣ 📜PretendardGOV-Medium.subset.woff
-
+<br>
 ┃ ┃ ┗ 📜PretendardGOV-Regular.subset.woff
-
+<br>
 ┃ ┣ 📂img
-
+<br>
 ┃ ┃ ┣ 📂component
-
+<br>
 ┃ ┃ ┃ ┗ 📂common
-
+<br>
 ┃ ┃ ┃ ┃ ┣ 📜ico_arr1_20_right.svg
-
+<br>
 ┃ ┃ ┃ ┃ ┣ 📜ico_arr_20_down_blue.svg
-
+<br>
 ┃ ┃ ┃ ┃ ┣ 📜ico_arr_accordion.svg
-
+<br>
 ┃ ┃ ┃ ┃ ┣ 📜ico_close_24.svg
-
+<br>
 ┃ ┃ ┃ ┃ ┣ 📜ico_file_20.svg
-
+<br>
 ┃ ┃ ┃ ┃ ┣ 📜ico_go_20.svg
-
+<br>
 ┃ ┃ ┃ ┃ ┗ 📜ico_sch_40.svg
-
+<br>
 ┃ ┃ ┣ 📂guide
+<br>
 ┃ ┃ ┃ ┣ 📂common
+<br>
 ┃ ┃ ┃ ┃ ┣ 📜arr_lnb.svg
+<br>
 ┃ ┃ ┃ ┃ ┗ 📜head_logo.svg
+<br>
 ┃ ┃ ┃ ┗ 📂contents
 ┃ ┃ ┃ ┃ ┗ 📂main
 ┃ ┃ ┗ 📂pattern
