@@ -33,30 +33,48 @@ KRDS는 한국정보화진흥원에서 제공하는 디지털 정부 서비스 U
 
 ┣ 📂assets
 
-
 ┃ ┣ 📂css
 
-
 ┃ ┃ ┣ 📂old
+
 ┃ ┃ ┃ ┗ 📜style.css
+
 ┃ ┃ ┣ 📜style.css
+
 ┃ ┃ ┣ 📜style.css.map
+
 ┃ ┃ ┣ 📜style.min.css
+
 ┃ ┃ ┗ 📜style.min.css.map
+
 ┃ ┣ 📂fonts
+
 ┃ ┃ ┣ 📜PretendardGOV-Bold.subset.woff
+
 ┃ ┃ ┣ 📜PretendardGOV-Medium.subset.woff
+
 ┃ ┃ ┗ 📜PretendardGOV-Regular.subset.woff
+
 ┃ ┣ 📂img
+
 ┃ ┃ ┣ 📂component
+
 ┃ ┃ ┃ ┗ 📂common
+
 ┃ ┃ ┃ ┃ ┣ 📜ico_arr1_20_right.svg
+
 ┃ ┃ ┃ ┃ ┣ 📜ico_arr_20_down_blue.svg
+
 ┃ ┃ ┃ ┃ ┣ 📜ico_arr_accordion.svg
+
 ┃ ┃ ┃ ┃ ┣ 📜ico_close_24.svg
+
 ┃ ┃ ┃ ┃ ┣ 📜ico_file_20.svg
+
 ┃ ┃ ┃ ┃ ┣ 📜ico_go_20.svg
+
 ┃ ┃ ┃ ┃ ┗ 📜ico_sch_40.svg
+
 ┃ ┃ ┣ 📂guide
 ┃ ┃ ┃ ┣ 📂common
 ┃ ┃ ┃ ┃ ┣ 📜arr_lnb.svg
