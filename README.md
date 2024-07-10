@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# KRDS - 디지털 정부 서비스 UI/UX 가이드라인 클론코딩
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+KRDS - UI/UX가이드라인 웹사이트 클론코딩 프로젝트입니다.
 
 ## Available Scripts
 
